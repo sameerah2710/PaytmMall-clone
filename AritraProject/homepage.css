@@ -27,7 +27,7 @@
     width: 4%;
     height: 75%;
     margin-left: -4.25%;
-    margin-top:6px;
+    margin-top:3px;
     
 }
 #input_tag{
@@ -38,3 +38,13 @@
     
 
 }
+.header_right{
+    display: flex;
+    margin-left:-11%;
+    margin-top: -6px;
+}
+.header_right>button{
+    background-color:white;
+    border: none;
+}
+
