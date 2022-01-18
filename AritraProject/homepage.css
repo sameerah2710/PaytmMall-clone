@@ -1,0 +1,40 @@
+.top-bar {
+    margin: auto;
+}
+.top-bar > img{
+    margin-left: 46%;
+    width: 8%;
+}
+.header{
+    display: flex;
+
+    margin-left: 3%;
+    margin-top: -10px;
+}
+.btn1{
+    background-color: white;
+    width: 13%;
+    height: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.432);
+    font-weight: bold;
+    font-size:13x;
+}
+.input_div{
+    display: flex;
+
+}
+.img{
+    width: 4%;
+    height: 75%;
+    margin-left: -4.25%;
+    margin-top:6px;
+    
+}
+#input_tag{
+    margin-left:1%;
+    width:79%;
+    height: 39px;
+    border: 1px solid rgba(128, 128, 128, 0.432);
+    
+
+}
