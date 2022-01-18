@@ -1,50 +1,116 @@
-.top-bar {
+/* .top-bar {
     margin: auto;
-}
-.top-bar > img{
+} */
+.top-bar >a> img{
     margin-left: 46%;
     width: 8%;
 }
 .header{
     display: flex;
 
-    margin-left: 3%;
+    margin-left: 2%;
     margin-top: -10px;
 }
+
 .btn1{
+    display: flex;
     background-color: white;
     width: 13%;
     height: 40px;
     border: 1px solid rgba(128, 128, 128, 0.432);
     font-weight: bold;
-    font-size:13x;
+    
+}
+.btn1>img{
+    width: 13%;
+    margin-top:6px;
+}
+.btn1>p{
+    margin-left:5px;
+    margin-top: 6.05%;
+    letter-spacing:0.5px;
+    font-size:12px;
 }
 .input_div{
     display: flex;
+    width: 70%;
 
 }
 .img{
-    width: 4%;
-    height: 75%;
-    margin-left: -4.25%;
-    margin-top:3px;
+    width: 2%;
+    height: 55%;
+    margin-left: -3.25%;
+    margin-top:7px;
     
 }
-#input_tag{
+.input_tag{
     margin-left:1%;
-    width:79%;
-    height: 39px;
+    width:75%;
+    height: 36px;
     border: 1px solid rgba(128, 128, 128, 0.432);
     
 
 }
+.input_tag:hover{
+    border: 1px solid rgba(128, 128, 128, 0.432);
+}
 .header_right{
     display: flex;
-    margin-left:-11%;
+    margin-left:-14%;
     margin-top: -6px;
+}
+.myOrder{
+    margin-left:-4%;
+    display: flex;
+    width: 30%;
+}
+.myOrder>img{
+    width:18%;
+    margin-top: 10px;
+    height: 23px;
+}
+.myOrder>p{
+    margin-left:5px;
+}
+.items{
+    display: flex;
+    width: 30%;
+}
+.items>img{
+    width:23%;
+    margin-top: 10px;
+}
+.cool_image{
+    margin-top: 14px;
+    height:25px;
 }
 .header_right>button{
     background-color:white;
     border: none;
+}
+.header_right>p{
+    margin-top: 21px;
+}
+.first_carousol{
+    margin-top: 3%;
+    display: flex;
+    /* overflow: auto; */
+}
+.first_carousol >div{
+    margin-left:60px;
+}
+.first_carousol>div>img{
+    border-radius: 50%;
+    
+    height: 80px;
+}
+.first_carousol>div>p{
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+.first_carousol>div>p:hover{
+    color: orangered;
 }
 
