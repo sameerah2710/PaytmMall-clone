@@ -1,0 +1,45 @@
+@import './reset.css';
+body {
+  background-color: #f5f7f7;
+}
+
+.order-heading {
+  font-size: 1.5rem;
+  color: #222;
+  font-weight: 700;
+  margin: 2rem 4.5rem 1rem;
+}
+.order-main {
+  width: 90%;
+  height: 60px;
+  /* border: 1px solid red; */
+  margin: auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.shopping-orders > p {
+  font-weight: 700;
+  margin-left: 40px;
+  cursor: pointer;
+}
+#order-id {
+  border: none;
+  font-size: 15px;
+  background: none;
+  width: 120px;
+}
+.append-data {
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid red;
+  margin-top: 50px;
+  border-radius: 10px;
+}
