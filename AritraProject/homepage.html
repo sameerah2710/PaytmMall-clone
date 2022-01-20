@@ -70,85 +70,89 @@
 
 
 
-    <div class="first_carousel">
-      <div>
+    <div id="first-carousel" class="first_carousel">
+        <div class="buttonContainer">
+            <button class="btn-primary" id="left" onClick="buttonClick(-1)"><img class ="btn-img"src="https://cdn-icons-png.flaticon.com/512/54/54321.png" alt=""></button>
+            <button class="btn-primary btn" id="right" onClick="buttonClick(1)"><img class ="btn-img" src="https://cdn-icons-png.flaticon.com/512/860/860828.png" alt=""></button>
+        </div>
+      <div id="first">
         <img
           src="https://assetscdn1.paytm.com/images/catalog/view_item/783440/1617031913307.png?imwidth=140&impolicy=hq"
           alt=""
         />
         <p>Mobiles</p>
       </div>
-      <div>
+      <div id="second">
         <img
           src="https://assetscdn1.paytm.com/images/catalog/view_item/783439/1617031733329.png?imwidth=140&impolicy=hq"
           alt=""
         />
         <p>Electronics</p>
       </div>
-      <div>
+      <div id="third">
         <img
           src="https://assetscdn1.paytm.com/images/catalog/view_item/783441/1617031947771.png?imwidth=140&impolicy=hq"
           alt=""
         />
         <p>Fashion</p>
       </div>
-      <div>
+      <div id="fourth">
         <img
           src="https://assetscdn1.paytm.com/images/catalog/view_item/783444/1617031896253.png?imwidth=140&impolicy=hq"
           alt=""
         />
         <p>Home & Kitchen</p>
       </div>
-      <div>
+      <div  id="fifth">
         <img
           src="https://assetscdn1.paytm.com/images/catalog/view_item/847788/1625046200322.png?imwidth=140&impolicy=hq"
           alt=""
         />
         <p>Appliances Range</p>
       </div>
-      <div>
+      <div id="sixth">
         <img
           src="https://assetscdn1.paytm.com/images/catalog/view_item/783442/1617031981569.png?imwidth=140&impolicy=hq"
           alt=""
         />
         <p>Grocery & Health</p>
       </div>
-      <div>
+      <div id="seventh">
         <img
           src="https://assetscdn1.paytm.com/images/catalog/view_item/783443/1617032011289.png?imwidth=140&impolicy=hq"
           alt=""
         />
         <p>Grocery & Health</p>
       </div>
-      <div>
+      <div id="eighth">
         <img
           src="https://assetscdn1.paytm.com/images/catalog/view_item/847789/1625046223483.jpg?imwidth=140&impolicy=hq"
           alt=""
         />
         <p>Fashion Accessories</p>
       </div>
-      <div>
+      <div id="ninth">
         <img
           src="https://assetscdn1.paytm.com/images/catalog/view_item/847791/1625046813181.jpg?imwidth=140&impolicy=hq"
           alt=""
         />
         <p>Footwear</p>
       </div>
-      <div>
+      <div id="tenth">
         <img
           src="https://assetscdn1.paytm.com/images/catalog/view_item/829802/1623243851027.png?imwidth=140&impolicy=hq"
           alt=""
         />
         <p>Used Gadgets</p>
       </div>
-      <div>
+      <div id="eleventh">
         <img
           src="https://assetscdn1.paytm.com/images/catalog/view_item/783445/1617031812753.png?imwidth=140&impolicy=hq"
           alt=""
         />
         <p>Men's Fashion</p>
       </div>
-      <div>
+      <div id="twelvth">
         <img
           src="https://assetscdn1.paytm.com/images/catalog/view_item/783446/1617031842306.png?imwidth=140&impolicy=hq"
           alt=""
@@ -516,4 +520,74 @@
       index = index % 3;
       carouselRendered(index);
   }, 10000);
+
+
+
+
+
+  var first = document.getElementById("first");
+  var second = document.getElementById("second");
+  var third = document.getElementById("third");
+  var fourth = document.getElementById("fourth");
+  var fifth = document.getElementById("fifth");
+  var sixth = document.getElementById("sixth");
+  var seventh = document.getElementById("seventh");
+  var eighth = document.getElementById("eighth");
+  var ninth = document.getElementById("ninth");
+  var tenth = document.getElementById("tenth");
+  var eleventh = document.getElementById("eleventh");
+  var twelvth = document.getElementById("twelvth");
+  var left = document.getElementById("left");
+  var right = document.getElementById("right");
+
+  console.log(first,second,third,fourth,fifth,sixth,seventh,eighth,ninth,tenth,eleventh,twelvth);
+  var el = 0;
+
+
+  firstCarouselRender(el);
+  function firstCarouselRender(el){
+      console.log('i',el)
+
+      if (el == 0){
+          left.style.display = "none";
+          right.style.display = "block"
+          first.style.display = "block";
+          second.style.display = "block";
+          third.style.display = "block";
+          fourth.style.display = "block";
+          fifth.style.display = "block";
+          sixth.style.display = "block";
+          seventh.style.display = "block";
+          eighth.style.display = "block";
+          ninth.style.display = "block";
+          tenth.style.display = "block";
+          eleventh.style.display = "block/1/3";
+          twelvth.style.display = "none";
+
+      }
+
+
+      else if(el == 1){
+        right.style.display = "none";
+        left.style.display = "block";
+        first.style.display = "none";
+          second.style.display = "none";
+          third.style.display = "block";
+          fourth.style.display = "block";
+          fifth.style.display = "block";
+          sixth.style.display = "block";
+          seventh.style.display = "block";
+          eighth.style.display = "block";
+          ninth.style.display = "block";
+          tenth.style.display = "block";
+          eleventh.style.display = "block";
+          twelvth.style.display = "block";
+      }
+  }
+  function buttonClick(event){
+      el = el + event;
+      console.log(el);
+    firstCarouselRender(el);
+  }
+
 </script>
