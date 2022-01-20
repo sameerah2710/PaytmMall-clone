@@ -7,10 +7,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>orderPage</title>
-		<link rel="stylesheet" href="./styles/order.css" />
+		<link rel="stylesheet" href="./order.css" />
 	</head>
 	<body>
-		<header></header>
+		<header>
+			<nav class="navbar"></nav>
+		</header>
 		<main>
 			<h3 class="order-heading">My orders</h3>
 			<div class="order-main">
@@ -20,8 +22,8 @@
 				</div>
 				<div class="search-orders flex">
 					<img
-						width="50px"
-						height="40px"
+						width="30px"
+						height="30px"
 						src="https://t3.ftcdn.net/jpg/01/27/72/28/240_F_127722883_DD4Sp3V30YxvYut3sRsaJqv7TKloEuyH.jpg"
 						alt=""
 					/>
@@ -33,8 +35,49 @@
 					/>
 				</div>
 			</div>
-			<div class="append-data"></div>
+			<div class="append-data">
+				<div id="append-div"></div>
+			</div>
+			<div id="empty-div"></div>
 		</main>
 		<footer></footer>
 	</body>
 </html>
+<script src="./order.js">
+	let orderData = [
+		{
+			image_url:
+				"https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBAPPLE-IPHONESUNR52504EEFB6A95/1611144494479_0.jpeg?imwidth=282&impolicy=hq",
+			productName: "Samsung Galaxy S20 FE 8 GB 128 GB Cloud Mint",
+			price: "रु41990",
+			status: "Payment Failed",
+			token: Math.floor(Math.random() * 171245789652),
+		},
+		{
+			image_url:
+				"https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALAAPNI993020E2B4397E/1618218020020_0..jpg?imwidth=282&impolicy=hq",
+			productName: "Vivo Y72 5G 8 GB 128 GB Prism Magic",
+			price: "रु 13999",
+			status: "Payment Failed",
+			token: Math.floor(Math.random() * 171245789652),
+		},
+		{
+			image_url:
+				"https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-Y53S-8-KIAA222802F2233326/1628335579672_0..jpg?imwidth=280&impolicy=hq",
+			productName: "Vivo Y53s 8 GB 128 GB Fantastic Rainbow",
+			price: "रु 18490",
+			status: "Payment Failed",
+			token: Math.floor(Math.random() * 171245789652),
+		},
+		{
+			image_url:
+				"https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBOPPO-F19-PROSHYA862930E590B23E/1624361012233_0.jpg?imwidth=282&impolicy=hq",
+			productName: "OPPO F19 6 GB 128 GB Prism Black",
+			price: "रु 19990",
+			status: "Payment Failed",
+			token: Math.floor(Math.random() * 171245789652),
+		},
+	];
+
+	localStorage.setItem("orderData", JSON.stringify(orderData));
+</script>
