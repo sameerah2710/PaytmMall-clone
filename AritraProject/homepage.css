@@ -256,7 +256,7 @@
     text-align: center;
 
 }
-.flash-div>button{
+.flash-div>a>button{
     align-items: center;
     margin-left: 46%;
     background-color:orangered;
