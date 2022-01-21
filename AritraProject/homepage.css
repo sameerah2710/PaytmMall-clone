@@ -277,18 +277,21 @@
 }
 .product-carousel-inner{
     display: flex;
+    
 }
 .product-div{
     width: 15%;
     margin-left:4%;
     height:450px;
+  
 
 }
 .product-div>img{
     width:130px;
     height:46%;
     margin-left: 23%;
-
+    transition: all .5s ease-in-out;
+    position: relative;
 }
 .price{
     text-align: center;
