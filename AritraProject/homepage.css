@@ -280,14 +280,13 @@
 }
 .product-div{
     width: 15%;
-    margin-top:2%;
     margin-left:4%;
     height:450px;
 
 }
 .product-div>img{
     width:130px;
-    height:48%;
+    height:46%;
     margin-left: 23%;
 
 }
