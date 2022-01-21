@@ -564,69 +564,69 @@
 
 
     <div class="first_carousel">
-        <button class="btn-primary" id="left" onClick="buttonClick(-1)"><img class ="btn-img"src="https://cdn-icons-png.flaticon.com/512/54/54321.png" alt=""></button>
-        <div class="first">
+        <button class="btn-primary" id="left4" onClick="buttonClickFour(-1)"><img class ="btn-img"src="https://cdn-icons-png.flaticon.com/512/54/54321.png" alt=""></button>
+        <div id="first4">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/719925/1617037022724.png?imwidth=140&impolicy=hq" alt="">
             <p>Jeans</p>
         </div>
-        <div class="second">
+        <div id="second4">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/719926/1617037156763.png?imwidth=140&impolicy=hq" alt="">
             <p>Starting Rs 150</p>
         </div>
-        <div class="third">
+        <div id="third4">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/719927/1617037045093.png?imwidth=140&impolicy=hq" alt="">
             <p>Briefs & Trunks</p>
         </div>
-        <div class="fourth">
+        <div id="fourth4">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/719928/1617037177983.png?imwidth=140&impolicy=hq" alt="">
             <p>Up to 70% off</p>
         </div>
-        <div class="fifth">
+        <div id="fifth4">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/719929/1617037335057.png?imwidth=140&impolicy=hq" alt="">
             <p>Sarees</p>
         </div>
-        <div class="sixth">
+        <div id="sixth4">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/719933/1617037072893.png?imwidth=140&impolicy=hq" alt="">
             <p>Min. 50% off</p>
         </div>
-        <div class="seventh">
+        <div id="seventh4">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/719935/1617037205228.png?imwidth=140&impolicy=hq" alt="">
             <p>Sneakers</p>
         </div>
-        <div class="eighth">
+        <div id="eighth4">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/719936/1617037212993.png?imwidth=140&impolicy=hq" alt="">
             <p>Starting Rs 99</p>
         </div>
-        <div class="ninth">
+        <div id="ninth4">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/719937/1617037101571.png?imwidth=140&impolicy=hq" alt="">
             <p>Ethnic Wear</p>
         </div>
-        <div class="tenth">
+        <div id="tenth4">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/719938/1617037381116.png?imwidth=140&impolicy=hq" alt="">
             <p>Under Rs 599</p>
         </div>
-        <div class="eleventh">
+        <div id="eleventh4">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/686204/1617037254381.png?imwidth=140&impolicy=hq" alt="">
             <p>Starting Rs 60</p>
         </div>
-        <div class="twelvth">
+        <div id="twelvth4">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/686205/1617037141101.png?imwidth=140&impolicy=hq" alt="">
             <p>Starting Rs 99</p>
         </div>
 
-        <button class="btn" id="right" onClick="buttonClick(1)"><img class ="btn-img" src="https://cdn-icons-png.flaticon.com/512/860/860828.png" alt=""></button>
+        <button class="btn" id="right4" onClick="buttonClickFour(1)"><img class ="btn-img" src="https://cdn-icons-png.flaticon.com/512/860/860828.png" alt=""></button>
         
     </div> 
 
@@ -1197,6 +1197,80 @@
       el3 = el3 + ev;
       console.log(el3);
     firstCarouselRenderYo(el3);
+  }
+
+
+
+
+
+
+
+
+  var first4 = document.getElementById("first4");
+  var second4 = document.getElementById("second4");
+  var third4 = document.getElementById("third4");
+  var fourth4 = document.getElementById("fourth4");
+  var fifth4 = document.getElementById("fifth4");
+  var sixth4= document.getElementById("sixth4");
+  var seventh4= document.getElementById("seventh4");
+  var eighth4 = document.getElementById("eighth4");
+  var ninth4 = document.getElementById("ninth4");
+  var tenth4 = document.getElementById("tenth4");
+  var eleventh4 = document.getElementById("eleventh4");
+  var twelvth4 = document.getElementById("twelvth4");
+  var left4 = document.getElementById("left4");
+  var right4= document.getElementById("right4");
+
+  console.log(first4,second4,third4,fourth4,fifth4,sixth4,seventh4,eighth4,ninth4,tenth4,eleventh4,twelvth4,left4,right4);
+  var pc = 0;
+
+
+  firstCarouselRenderYoYo(pc);
+  function firstCarouselRenderYoYo(pc){
+      console.log('i',pc)
+
+      if (pc == 0){
+        console.log('gottten1');
+          left4.style.display = "none";
+          right4.style.display = "block"
+          first4.style.display = "block";
+          second4.style.display = "block";
+          third4.style.display = "block";
+          fourth4.style.display = "block";
+          fifth4.style.display = "block";
+          sixth4.style.display = "block";
+          seventh4.style.display = "block";
+          eighth4.style.display = "block";
+          ninth4.style.display = "block";
+          tenth4.style.display = "block";
+          eleventh4.style.display = "none";
+          twelvth4.style.display = "none";
+
+      }
+
+
+      else if(pc == 1){
+        console.log('gotten2');
+        right4.style.display = "none";
+        left4.style.display = "block";
+        first4.style.display = "none";
+          second4.style.display = "none";
+          third4.style.display = "none";
+          fourth4.style.display = "block";
+          fifth4.style.display = "block";
+          sixth4.style.display = "block";
+          seventh4.style.display = "block";
+          eighth4.style.display = "block";
+          ninth4.style.display = "block";
+          tenth4.style.display = "block";
+          eleventh4.style.display = "block";
+          twelvth4.style.display = "block";
+      }
+  }
+  function buttonClickFour(p){
+      pc = pc + p;
+      console.log(pc);
+    firstCarouselRenderYoYo(pc);
   }
 
   
