@@ -399,11 +399,7 @@
              src="https://assetscdn1.paytm.com/images/catalog/view_item/686375/1617033117510.png?imwidth=140&impolicy=hq" alt="">
             <p>Cases & Covers</p>
         </div>
-        <!-- <div>
-            <img
-             src="https://assetscdn1.paytm.com/images/catalog/view_item/686376/1617033146544.png?imwidth=140&impolicy=hq" alt="">
-            <p>Trimmers</p>
-        </div> -->
+        
 
         <button class="btn" id="right2" onClick="buttonclickTwo(1)"><img class ="btn-img" src="https://cdn-icons-png.flaticon.com/512/860/860828.png" alt=""></button>
     </div>
@@ -426,55 +422,56 @@
 
 
     <div class="first_carousel">
-        <div>
+        <button class="btn-primary" id="left3" onClick="buttonclickThree(-1)"><img class ="btn-img"src="https://cdn-icons-png.flaticon.com/512/54/54321.png" alt=""></button>
+        <div id="first3">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/686266/1617033402956.png?imwidth=140&impolicy=hq" alt="">
         </div>
-        <div>
+        <div id="second3">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/686267/1617033416493.png?imwidth=140&impolicy=hq" alt="">
         </div>
-        <div>
+        <div id="third3">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/686268/1617033570482.png?imwidth=140&impolicy=hq" alt="">
         </div>
-        <div>
+        <div id="fourth3">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/686269/1617033577333.png?imwidth=140&impolicy=hq" alt="">
         </div>
-        <div>
+        <div id="fifth3">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/686270/1617033323011.png?imwidth=140&impolicy=hq" alt="">
         </div>
-        <div>
+        <div id="sixth3">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/686271/1617033455793.png?imwidth=140&impolicy=hq" alt="">
         </div>
-        <div>
+        <div id="seventh3">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/686273/1617033617185.png?imwidth=140&impolicy=hq" alt="">
         </div>
-        <div>
+        <div id="eighth3">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/686274/1617033623361.png?imwidth=140&impolicy=hq" alt="">
         </div>
-        <div>
+        <div id="ninth3">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/686283/1617033365548.png?imwidth=140&impolicy=hq" alt="">
         </div>
-        <div>
+        <div id="tenth3">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/686285/1617033506648.png?imwidth=140&impolicy=hq" alt="">
         </div>
-        <div>
+        <div id="eleventh3">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/686286/1617033661195.png?imwidth=140&impolicy=hq" alt="">
         </div>
-        <div>
+        <div id="twelvth3">
             <img
              src="https://assetscdn1.paytm.com/images/catalog/view_item/686287/1617033402152.png?imwidth=140&impolicy=hq" alt="">
         </div>
-        
+        <button class="btn" id="right3" onClick="buttonclickThree(1)"><img class ="btn-img" src="https://cdn-icons-png.flaticon.com/512/860/860828.png" alt=""></button>
     </div>
 
 
@@ -1129,6 +1126,78 @@
   }
 
 
+
+
+
+
+
+
+  var first3 = document.getElementById("first3");
+  var second3 = document.getElementById("second3");
+  var third3 = document.getElementById("third3");
+  var fourth3 = document.getElementById("fourth3");
+  var fifth3 = document.getElementById("fifth3");
+  var sixth3 = document.getElementById("sixth3");
+  var seventh3 = document.getElementById("seventh3");
+  var eighth3 = document.getElementById("eighth3");
+  var ninth3 = document.getElementById("ninth3");
+  var tenth3= document.getElementById("tenth3");
+  var eleventh3 = document.getElementById("eleventh3");
+  var twelvth3 = document.getElementById("twelvth3");
+  var left3 = document.getElementById("left3");
+  var right3= document.getElementById("right3");
+
+  console.log(first3,second3,third3,fourth3,fifth3,sixth3,seventh3,eighth3,ninth3,tenth3,eleventh3,twelvth3,left3,right3);
+  var el3 = 0;
+
+
+  firstCarouselRenderYo(el3);
+  function firstCarouselRenderYo(el3){
+      console.log('i',el3)
+
+      if (el3 == 0){
+        console.log('gta1');
+          left3.style.display = "none";
+          right3.style.display = "block"
+          first3.style.display = "block";
+          second3.style.display = "block";
+          third3.style.display = "block";
+          fourth3.style.display = "block";
+          fifth3.style.display = "block";
+          sixth3.style.display = "block";
+          seventh3.style.display = "block";
+          eighth3.style.display = "block";
+          ninth3.style.display = "block";
+          tenth3.style.display = "block";
+          eleventh3.style.display = "none";
+          twelvth3.style.display = "none";
+
+      }
+
+
+      else if(el3 == 1){
+        console.log('gta2');
+        right3.style.display = "none";
+        left3.style.display = "block";
+        first3.style.display = "none";
+          second3.style.display = "none";
+          third3.style.display = "none";
+          fourth3.style.display = "block";
+          fifth3.style.display = "block";
+          sixth3.style.display = "block";
+          seventh3.style.display = "block";
+          eighth3.style.display = "block";
+          ninth3.style.display = "block";
+          tenth3.style.display = "block";
+          eleventh3.style.display = "block";
+          twelvth3.style.display = "block";
+      }
+  }
+  function buttonclickThree(ev){
+      el3 = el3 + ev;
+      console.log(el3);
+    firstCarouselRenderYo(el3);
+  }
 
   
 
