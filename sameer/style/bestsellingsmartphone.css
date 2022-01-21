@@ -116,3 +116,14 @@ div > img{
     color: #666666;   
 }
 
+#four_in_row > div{
+    height: 60%;
+    width: 3px;
+    margin-top: 4px;
+}
+.hov_er:hover{
+    cursor: pointer;
+}
+.sMImages{
+    display: grid;
+}
