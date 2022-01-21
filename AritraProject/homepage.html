@@ -250,82 +250,82 @@
 
 
 
-    <div id="first-carousel" class="first_carousel">
-        <button class="btn-primary" id="left" onClick="buttonClick(-1)"><img class ="btn-img"src="https://cdn-icons-png.flaticon.com/512/54/54321.png" alt=""></button>
-        <div id="first">
+    <div id="first-carousel1" class="first_carousel">
+        <button class="btn-primary" id="left1" onClick="buttonClickOne(-1)"><img class ="btn-img"src="https://cdn-icons-png.flaticon.com/512/54/54321.png" alt=""></button>
+        <div id="first1">
             <img 
             src="https://assetscdn1.paytm.com/images/catalog/view_item/783451/1617032710736.png?imwidth=140&impolicy=hq" alt="">
             <p>Jeans</p>
         </div>
-        <div id="second">
+        <div id="second1">
             <img 
             src="https://assetscdn1.paytm.com/images/catalog/view_item/783452/1617032740861.png?imwidth=140&impolicy=hq" alt="">
             <p>Bluetooth Headsets</p>
         </div>
-        <div id="third">
+        <div id="third1">
             <img 
             src="https://assetscdn1.paytm.com/images/catalog/view_item/783453/1617032779735.png?imwidth=140&impolicy=hq" alt="">
             <p>T-shirts</p>
         </div>
-        <div id="fourth">
+        <div id="fourth1">
             <img 
             src="https://assetscdn1.paytm.com/images/catalog/view_item/783457/1617032657156.png?imwidth=140&impolicy=hq" alt="">
             <p>Mobile Accessories</p>
         </div>
-        <div id="fifth">
+        <div id="fifth1">
             <img 
             src="https://assetscdn1.paytm.com/images/catalog/view_item/783458/1617032822205.png?imwidth=140&impolicy=hq" alt="">
             
             <p>Wired Earphones</p>
         </div>
-        <div id="sixth">
+        <div id="sixth1">
             
             <img 
             src="https://assetscdn1.paytm.com/images/catalog/view_item/783459/1617032724327.png?imwidth=140&impolicy=hq" alt="">
             
             <p>Trimmers</p>
         </div>
-        <div id="seventh">
+        <div id="seventh1">
             
             <img 
             src="https://assetscdn1.paytm.com/images/catalog/view_item/783460/1617032758218.png?imwidth=140&impolicy=hq" alt="">
             
             <p>Fans</p>
         </div>
-        <div id="eighth">
+        <div id="eighth1">
         
             <img 
             src="https://assetscdn1.paytm.com/images/catalog/view_item/783461/1617032921891.png?imwidth=140&impolicy=hq" alt="">
             
             <p>Mixer & Juicers</p>
         </div>
-        <div id="ninth">
+        <div id="ninth1">
             
             <img 
             src="https://assetscdn1.paytm.com/images/catalog/view_item/783462/1617033095513.png?imwidth=140&impolicy=hq" alt="">
             
             <p>Dry Fruits</p>
         </div>
-        <div id="tenth">
+        <div id="tenth1">
             
             <img src="https://assetscdn1.paytm.com/images/catalog/view_item/783463/1617032845432.png?imwidth=140&impolicy=hq" alt="">
             
             <p>Dry Fruits</p>
         </div>
-        <div id="eleventh">
+        <div id="eleventh1">
             
             <img src="https://assetscdn1.paytm.com/images/catalog/view_item/783464/1617032880858.png?imwidth=140&impolicy=hq" alt="">
             
             <p>Sports Shoes</p>
         </div>
-        <div id="twelvth">
+        <div id="twelvth1">
             
             <img 
             src="https://assetscdn1.paytm.com/images/catalog/view_item/783460/1617032758218.png?imwidth=140&impolicy=hq" alt="">
             
             <p>Fans</p>
         </div>
-        <button class="btn" id="right" onClick="buttonClick(1)"><img class ="btn-img" src="https://cdn-icons-png.flaticon.com/512/860/860828.png" alt=""></button>
+        <button class="btn" id="right1" onClick="buttonClickOne(1)"><img class ="btn-img" src="https://cdn-icons-png.flaticon.com/512/860/860828.png" alt=""></button>
     </div>
 
 
@@ -983,6 +983,78 @@
       el = el + event;
       console.log(el);
     firstCarouselRender(el);
+  }
+
+
+
+
+
+  var first1 = document.getElementById("first1");
+  var second1 = document.getElementById("second1");
+  var third1 = document.getElementById("third1");
+  var fourth1 = document.getElementById("fourth1");
+  var fifth1 = document.getElementById("fifth1");
+  var sixth1 = document.getElementById("sixth1");
+  var seventh1 = document.getElementById("seventh1");
+  var eighth1 = document.getElementById("eighth1");
+  var ninth1 = document.getElementById("ninth1");
+  var tenth1 = document.getElementById("tenth1");
+  var eleventh1 = document.getElementById("eleventh1");
+  var twelvth1 = document.getElementById("twelvth1");
+  var left1 = document.getElementById("left1");
+  var right1 = document.getElementById("right1");
+
+  console.log(first1,second1,third1,fourth1,fifth1,sixth1,seventh1,eighth1,ninth1,tenth1,eleventh1,twelvth1,left1,right1);
+  var el1 = 0;
+
+
+
+  firstCarouselRendering(el1);
+  function firstCarouselRendering(el){
+      console.log('i',el1)
+
+      if (el1 == 0){
+        console.log('get1');
+          left1.style.display = "none";
+          right1.style.display = "block";
+          first1.style.display = "block";
+          second1.style.display = "block";
+          third1.style.display = "block";
+          fourth1.style.display = "block";
+          fifth1.style.display = "block";
+          sixth1.style.display = "block";
+          seventh1.style.display = "block";
+          eighth1.style.display = "block";
+          ninth1.style.display = "block";
+          tenth1.style.display = "block";
+          eleventh1.style.display = "none";
+          twelvth1.style.display = "none";
+
+      }
+
+
+      else if(el == 1){
+        console.log('get2');
+        right1.style.display = "none";
+        left1.style.display = "block";
+        first1.style.display = "none";
+          second1.style.display = "none";
+          third1.style.display = "none";
+          fourth1.style.display = "block";
+          fifth1.style.display = "block";
+          sixth1.style.display = "block";
+          seventh1.style.display = "block";
+          eighth1.style.display = "block";
+          ninth1.style.display = "block";
+          tenth1.style.display = "block";
+          eleventh1.style.display = "block";
+          twelvth1.style.display = "block";
+      }
+  }
+  function buttonClickOne(event1){
+      el1 = el1 + event1;
+      console.log(el1);
+    firstCarouselRendering(el1);
   }
 
 </script>
