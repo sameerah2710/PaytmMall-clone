@@ -101,9 +101,9 @@
 
 .first_carousel{
     margin-top: 3%;
-    margin-left: -2.5%;
+    margin-left: -.5%;
     display: flex;
-    width: 110%;
+    width: 100%;
     /* overflow: auto; */
 }
 .first_carousel >div{
@@ -127,7 +127,28 @@
     color: orangered;
 }
 
+.btn-primary{
+    background-color: #fff;
+    border:none;
+    margin-top:.5%;
+    width: 3.5%;
+    height: 80px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
+
+}
+.btn{
+    background-color: #fff;
+    border:none;
+    margin-top:.5%;
+    border-radius: 2px;
+    margin-left: -3%;
+    z-index: 100;
+    width:4.5%;
+    height: 80px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
 
 
 
@@ -222,6 +243,30 @@
 
 
 
+
+.flash-div{
+    margin-top:5%;
+    max-width: 100%;
+    height:auto;
+}
+.flash-div > h2{
+    font-family: sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+
+}
+.flash-div>button{
+    align-items: center;
+    margin-left: 46%;
+    background-color:orangered;
+    border: none;
+    width:7%;
+    height:30px;
+    border-radius:20px;
+    color:white;
+    font-weight: bold;
+}
 
 
 
