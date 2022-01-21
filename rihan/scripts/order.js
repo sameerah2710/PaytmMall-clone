@@ -8,20 +8,20 @@ let empty_div = document.querySelector("#empty-div");
 let shopping_btn = document.querySelector(".shopping-btn");
 showDatas(orderArr);
 
-let filter_btn = document.getElementById("filter-id");
-filter_btn.addEventListener("click", filterById);
+let filter_input = document.getElementById("order-id");
+filter_input.addEventListener("keypress", filterById);
+let orderId = document.getElementById("order-id");
 
-function filterById() {
-	let orderId = document.getElementById("order-id");
-
+function filterById(event) {
 	let id = orderId.value;
 	if (id !== "") {
-		let filterList = orderArr.filter((elem) => {
-			return elem.token == id;
-		});
-		// console.log(filterList);
-		showDatas(filterList);
-		orderId.innerHTML = "";
+		if (event.key == "Enter") {
+			let filterList = orderArr.filter((elem) => {
+				return elem.token == id;
+			});
+			// console.log(filterList);
+			showDatas(filterList);
+		}
 	}
 }
 
@@ -170,6 +170,7 @@ function showData() {
 			window.location.href = "./order.html";
 		});
 	}
+	orderId.value = "";
 }
 
 function showEmpty() {
@@ -200,4 +201,5 @@ function showEmpty() {
 	btn.addEventListener("click", () => {
 		window.location.href = "./order.html";
 	});
+	orderId.value = "";
 }
