@@ -1,7 +1,11 @@
 var smartPhones = JSON.parse(localStorage.getItem("smartPhones"))
 document.getElementsByClassName(".sMImages")
-function showallProducts(smartPhones){
+showallProducts(); 
+
+function showallProducts(){
     let maindiv = document.getElementById("sMImages")
+ maindiv.innerHTML = null
+    
     smartPhones.forEach(function(ele){
         let div = document.createElement('div');
         let div1 = document.createElement('div');
@@ -20,7 +24,7 @@ function showallProducts(smartPhones){
         maindiv.append(div);
     });
 }
-showallProducts(smartPhones); 
+
 function sort(){
     let selected = document.querySelector("#select").value;
     if (selected === "p"){
@@ -33,13 +37,13 @@ function sort(){
         })
         console.log(Number(smartPhones[0].price));
         console.log(smartPhones);
-         showallProducts(smartPhones);
+         showallProducts();
     }
     else if(selected === "HtL"){
         smartPhones.sort(function(a, b){
             return b.price - a.price;
         })
         console.log(smartPhones);
-         showallProducts(smartPhones);
+         showallProducts();
     }
 }
