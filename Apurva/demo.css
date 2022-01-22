@@ -230,7 +230,7 @@ h4 + img {
   background-color: rgb(204, 204, 204);
 }
 #prod {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 700px;
   width: 98%;
   background-color: white;
@@ -246,94 +246,217 @@ h4 + img {
   /* border: 1px solid red; */
   height: 50px;
   display: flex;
-  
 }
 #tp div {
-    margin-left:  10px;
-    text-align: center;
-
+  margin-left: 10px;
+  text-align: center;
 }
-#tp div p{
-    font-size: 18px;
-    
+#tp div p {
+  font-size: 18px;
 }
-#flx{
-    display: flex;
-    /* border: 1px solid; */
-
+#flx {
+  display: flex;
+  /* border: 1px solid; */
 }
-#inf{
-    /* border: 1px solid; */
-    
+#inf {
+  /* border: 1px solid; */
 }
-#inf img{
-    /* border: 1px solid; */
+#inf img {
+  /* border: 1px solid; */
   width: 40px;
   margin-top: 30px;
-  
 }
 #inf2 {
-    /* border: 1px solid; */
-   line-height: 10px;
+  /* border: 1px solid; */
+  line-height: 10px;
 }
-#sldby{
-    line-height: 2px;
+#sldby {
+  line-height: 2px;
+}
+#downL {
+  height: 30px;
+}
+#gen {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#gen div p {
+  font-size: 20px;
+}
+#report {
+  /* border: 1px solid; */
+  color: orangered;
+  text-align: center;
+  font-size: 12px;
+}
+#simlr {
+  /* border: 2px solid; */
+  background-color: white;
+}
+#pics {
+  display: flex;
+  /* border: 1px solid red; */
+  height: 400px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.pho img {
+  /* border: 1px solid red; */
 
+  width: 85%;
+  height: 60%;
 }
-#downL{
-    height: 30px;
+.pho1 img {
+  /* border: 5px solid; */
+  height: 60%;
+  text-align: center;
 }
-#gen{
+.org {
+  /* border: 1px solid red; */
+
+  color: orangered;
+  font-size: 18px;
+  font-weight: bolder;
+}
+#sp {
+  /* border: 1px solid red; */
+
+  color: black;
+  font-size: 16px;
+  font-weight: 100;
+}
+#head {
+  text-align: center;
+}
+#deal1 {
+  /* border: 2px solid; */
+
+  width: 100%;
+  height: 700px;
+  margin-left: 10px;
+  display: flex;
+  /* border: 1px solid red; */
+}
+#deal2 {
+  /* border: 2px solid; */
+
+  width: 15%;
+  height: 760px;
+  margin-left: 10px;
+  /* border: 1px solid teal; */
+}
+#deal3 {
+  border: 2px solid;
+
+  width: 27%;
+  height: 600px;
+  /* margin-left: 20px; */
+  /* margin-right: 20px; */
+  /* border: 1px solid green; */
+}
+
+.deal9 {
+  border: 2px solid;
+  /* small image  */
+  width: 70%;
+  height: 150px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.deal9:hover {
+  border-bottom: 4px solid orangered;
+}
+/* #deal3>img{
+       width: 50%;
+       height: 80%;
+   } */
+
+#deal10 {
+  /* big image */
+  margin-top: 10px;
+  height: 600px;
+  width: 6 0%;
+}
+
+#side {
+  width: 10%;
+  display: grid;
+  justify-content: center;
+}
+#prod1{
+    /* border: 1px solid; */
+    width: 60%;
+}
+#info{
+    /* border: 1px solid red; */
+    height: 10%;
+    margin-top: 5%;
+    width: 80%;
+    margin-left: auto;
+    line-height: 8px;
+}
+#info p{
+/* border: 1px solid; */
+font-size: 20px;
+}
+#per{
+    margin-left: 3px;
+    color: seagreen;
+    font-size: 13px;
+}
+#snd{
+    /* border: 1px solid black; */
+    height: 10%;
+    margin-top: 40px;
+    width: 80%;
+    margin-left: auto;
     display: flex;
     align-items: center;
-    cursor: pointer;
+    color: orangered;
 }
-#gen div p{
-    font-size: 20px;
+#buy{
+    border: 1px solid;
+    height: 50%;
+    width: 30%;
+    
 }
-#report{
+#pytm{
     /* border: 1px solid; */
-    color: orangered;
-    text-align: center;
-    font-size: 12px;
-}
-#simlr{
-    /* border: 2px solid; */
-    background-color: white;
-
-}
-#pics{
+    width: 80%;
+    margin-left: auto;
     display: flex;
-    /* border: 1px solid red; */
-    height: 400px;
-    justify-content: space-evenly;
-    text-align: center;
 }
-.pho img{
+#pic2 img{
     /* border: 1px solid red; */
-
-    width: 85%;
-    height: 60%;
+    width: 30px;
 }
-.pho1 img{
-    /* border: 5px solid; */
-    height: 60%;
-    text-align: center;
+#highlight{
+    /* border: 1px solid; */
+    width: 80%;
+    margin-left: auto;
 }
-.org{
-    /* border: 1px solid red; */
-
-    color: orangered;
-    font-size: 18px;
+#highlight h3{
+    width: 80%;
+    margin-left: 20px;
+}
+ul{
+    line-height: 30px;
+}
+#btn{
+    
+    width: 79%;
+    margin-left: 100px;
+    height: 6%;  
+}
+#btn button{
+    width: 100%;
+    height: 100%;
+    background-color: #ef4e28;
+    border-radius: 10px;
+    color: white;
+    font-size: 19px;
     font-weight: bolder;
-}
-#sp{
-    /* border: 1px solid red; */
+    
 
-    color: black;
-    font-size: 16px;
-    font-weight: 100;
-}
-#head{
-    text-align: center;
 }
