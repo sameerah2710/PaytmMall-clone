@@ -807,8 +807,12 @@
 
 
 
-    <div class="product-carousel">
-        <div class="product-carousel-inner">
+    <div  class="product-carousel">
+        <div class="button-container1">
+            <button class="btn-primary" id="lt3" onClick="buttonclick3(-1)"><img class ="btn-img"src="https://cdn-icons-png.flaticon.com/512/54/54321.png" alt=""></button>
+            <button class="btn" id="rt3" onClick="buttonclick3(1)"><img class ="btn-img" src="https://cdn-icons-png.flaticon.com/512/860/860828.png" alt=""></button>
+        </div>
+        <div id="product-caro-inner5" class="product-carousel-inner">
             <div class="product-div">
                 <img src="https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREALME-C21Y-APNI9930203787DECD/1631188979509_0..jpeg?imwidth=280&impolicy=hq" alt="">
                 <p class="price">₹10500</p>
@@ -836,7 +840,7 @@
             </div>
         
         </div>
-        <div class="product-carousel-inner">
+        <div id="product-caro-inner6" class="product-carousel-inner">
             <div class="product-div">
                 <img src="https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBOPPO-F19-PROSHYA862930E590B23E/1624361012233_0.jpg?imwidth=280&impolicy=hq" alt="">
                 <p class="price">₹21490</p>
@@ -1370,6 +1374,57 @@
       console.log(f);
       productCaroRender_2(f);
   }
+
+
+
+
+
+
+
+
+  var innerDiv5=document.getElementById("product-caro-inner5") 
+  var innerDiv6=document.getElementById("product-caro-inner6");
+  var lt3 = document.getElementById("lt3");
+  var rt3 = document.getElementById("rt3");
+
+  console.log(innerDiv5,innerDiv6,lt3,rt3);
+  var k = 0;
+
+
+  productCaroRender_3(k);
+  function productCaroRender_3(k){
+      console.log('i',k)
+      if(k == 0){
+          console.log('cro1')
+          innerDiv5.style.display = "flex";
+          innerDiv6.style.display = "none";
+          lt3.style.display = "none";
+          rt3.style.display = "block";
+
+      }
+
+      else if(k== 1){
+        console.log('cro2')
+          innerDiv5.style.display = "none";
+          innerDiv6.style.display = "flex";
+          lt3.style.display = "block";
+          rt3.style.display = "none";
+      }
+  }
+
+
+
+  function buttonclick3(elementos){
+      
+      k = k + elementos;
+      console.log(k);
+      productCaroRender_3(k);
+  }
+
+
+
+
+
 
 
 

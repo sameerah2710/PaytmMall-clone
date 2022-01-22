@@ -319,12 +319,12 @@
 
 
 
-#lt1,#lt2{
+#lt1,#lt2,#lt3{
     position: absolute;
     /* margin-left:-1%; */
     width: 3.25%;
 }
-#rt1,#rt2{
+#rt1,#rt2,#rt3{
    margin-left:95.6%;
    position: absolute;
    width: 3.25%;
