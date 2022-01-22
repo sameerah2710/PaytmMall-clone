@@ -647,7 +647,11 @@
 
 
     <div class="product-carousel">
-        <div class="product-carousel-inner">
+        <div class="button-container1">
+            <button class="btn-primary" id="lt2" onClick="buttonclick2(-1)"><img class ="btn-img"src="https://cdn-icons-png.flaticon.com/512/54/54321.png" alt=""></button>
+            <button class="btn" id="rt2" onClick="buttonclick2(1)"><img class ="btn-img" src="https://cdn-icons-png.flaticon.com/512/860/860828.png" alt=""></button>
+        </div>
+        <div id="product-caro-inner3" class="product-carousel-inner">
             <div class="product-div">
                 <img src="https://assetscdn1.paytm.com/images/catalog/product/C/CO/COMBOAT-BASSHEACLIC252498396E26F9/1562672507532_31.jpg?imwidth=280&impolicy=hq" alt="">
                 <p class="price">₹378</p>
@@ -675,7 +679,7 @@
             </div>
         
         </div>
-        <div class="product-carousel-inner">
+        <div id="product-caro-inner4" class="product-carousel-inner">
             <div class="product-div">
                 <img src="https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBBOAT-BASSHEACLIC25249869C23473/1562653108739_0.jpg?imwidth=280&impolicy=hq" alt="">
                 <p class="price">₹378</p>
@@ -1322,6 +1326,50 @@
       productCaroRender(d);
   }
 
+
+
+
+
+
+
+  var innerDiv3=document.getElementById("product-caro-inner3") 
+  var innerDiv4=document.getElementById("product-caro-inner4");
+  var lt2 = document.getElementById("lt2");
+  var rt2 = document.getElementById("rt2");
+
+  console.log(innerDiv3,innerDiv4,lt2,rt2);
+  var f = 0;
+
+
+  productCaroRender_2(f);
+  function productCaroRender_2(f){
+      console.log('i',f)
+      if(f == 0){
+          console.log('caro1')
+          innerDiv3.style.display = "flex";
+          innerDiv4.style.display = "none";
+          lt2.style.display = "none";
+          rt2.style.display = "block";
+
+      }
+
+      else if(f== 1){
+        console.log('caro2')
+          innerDiv3.style.display = "none";
+          innerDiv4.style.display = "flex";
+          lt2.style.display = "block";
+          rt2.style.display = "none";
+      }
+  }
+
+
+
+  function buttonclick2(elem){
+      
+      f = f + elem;
+      console.log(f);
+      productCaroRender_2(f);
+  }
 
 
 
