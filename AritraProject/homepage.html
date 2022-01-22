@@ -488,7 +488,13 @@
 
 
     <div class="product-carousel">
-        <div class="product-carousel-inner">
+        
+        <div class="button-container1">
+            <button class="btn-primary" id="lt1" onClick="buttonclick1(-1)"><img class ="btn-img"src="https://cdn-icons-png.flaticon.com/512/54/54321.png" alt=""></button>
+            <button class="btn" id="rt1" onClick="buttonclick1(1)"><img class ="btn-img" src="https://cdn-icons-png.flaticon.com/512/860/860828.png" alt=""></button>
+        </div>
+        <div id="product-caro-inner1" class="product-carousel-inner">
+            
             <div class="product-div">
                 <img src="https://assetscdn1.paytm.com/images/catalog/product/C/CO/COMBOAT-ROCKERZCLIC252498B030EDE0/0..jpg?imwidth=280&impolicy=hq" alt="">
                 <p class="price">₹1099</p>
@@ -516,7 +522,7 @@
             </div>
         
         </div>
-        <div class="product-carousel-inner">
+        <div id="product-caro-inner2" class="product-carousel-inner">
             <div class="product-div">
                 <img src="https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-Y12S-3-KIAA22280245CBE4CA/1610381337406_0..jpg?imwidth=280&impolicy=hq" alt="">
                 <p class="price">₹10990</p>
@@ -543,6 +549,7 @@
                 <p class="para">Hawkins Dosa Tawa 30 cm Diameter ( Aluminium  ,  Set of 1 )</p>
             </div>
         </div>
+        
     </div>
 
 
@@ -1274,6 +1281,48 @@
   }
 
   
+
+
+  var innerDiv1=document.getElementById("product-caro-inner1") 
+  var innerDiv2=document.getElementById("product-caro-inner2");
+  var lt1 = document.getElementById("lt1");
+  var rt1 = document.getElementById("rt1");
+
+  console.log(innerDiv1,innerDiv2,lt1,rt1);
+  var d = 0;
+
+
+  productCaroRender(d);
+  function productCaroRender(d){
+      console.log('i',d)
+      if(d == 0){
+          console.log('carousel1')
+          innerDiv1.style.display = "flex";
+          innerDiv2.style.display = "none";
+          lt1.style.display = "none";
+          rt1.style.display = "block";
+
+      }
+
+      else if(d== 1){
+        console.log('carousel2')
+          innerDiv1.style.display = "none";
+          innerDiv2.style.display = "flex";
+          lt1.style.display = "block";
+          rt1.style.display = "none";
+      }
+  }
+
+
+
+  function buttonclick1(element){
+      
+      d = d + element;
+      console.log(d);
+      productCaroRender(d);
+  }
+
+
 
 
 </script>

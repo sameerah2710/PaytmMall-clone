@@ -317,3 +317,17 @@
 
 
 
+
+
+#lt1{
+    position: absolute;
+    /* margin-left:-1%; */
+    width: 3.25%;
+}
+#rt1{
+   margin-left:95.6%;
+   position: absolute;
+   width: 3.25%;
+}
+
+
