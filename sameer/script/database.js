@@ -1,7 +1,7 @@
 phones = [
     {
         name      : "Vivo V21 5G 8 GB 256 GB Dusk Blue",
-        price     : "32,990" ,
+        price     : 32990 ,
         image_fr  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA22280264AC3BB7/1620903930202_0..jpg?imwidth=64&impolicy=hq",
         image_bk  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA22280264AC3BB7/1620903931945_1..jpg?imwidth=64&impolicy=hq",
         image_le  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA22280264AC3BB7/1620903932429_2..jpg?imwidth=64&impolicy=hq" ,
@@ -13,7 +13,7 @@ phones = [
     },
     {
         name      : "Vivo X60 Pro 12 GB 256 GB Midnight Black",
-        price     : "49,990",
+        price     : 49990,
         image_fr  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802BA2F236C/1616587381643_1..jpg?imwidth=64&impolicy=hq",
         image_bk  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802BA2F236C/1616587395537_2..jpg?imwidth=64&impolicy=hq",
         image_le  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802BA2F236C/1616587392598_3..jpg?imwidth=64&impolicy=hq",
@@ -25,7 +25,7 @@ phones = [
     },
     {
         name     :"Vivo Y12G 3 GB 32 GB Phantom Black" ,
-        price    : "10,990",
+        price    : 10990,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-Y12G-3-KIAA222802A101F332/1628335062213_0..jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-Y12G-3-KIAA222802A101F332/1628335064580_1..jpg?imwidth=64&impolicy=hq" ,
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-Y12G-3-KIAA222802A101F332/1628335066349_2..jpg?imwidth=64&impolicy=hq",
@@ -37,7 +37,7 @@ phones = [
     },
     {
         name     : "Samsung Galaxy M31 8 GB 128 GB Ocean Blue",
-        price    : "18,999" ,
+        price    : 18999 ,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALAAPNI993020EA801EA/0..jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALAAPNI993020EA801EA/1..jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALAAPNI993020EA801EA/2..jpg?imwidth=64&impolicy=hq",
@@ -49,7 +49,7 @@ phones = [
     },
     {
         name     : "Vivo X60 Pro 12 GB 256 GB Shimmer Blue",
-        price    :  "49,990",
+        price    :  49990,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802D2D4EA4C/1616587302677_1..jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802D2D4EA4C/1616587316196_2..jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802D2D4EA4C/1616587377176_0..jpg?imwidth=64&impolicy=hq",
@@ -61,7 +61,7 @@ phones = [
     },
     {
         name     : "realme C25Y 4 GB 64 GB Metal Grey",
-        price    : "10,790",
+        price    : 10790,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREALME-C25Y-BALA816012D27B0EE8/1636725132491_0.jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREALME-C25Y-BALA816012D27B0EE8/1636725132614_1.jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREALME-C25Y-BALA816012D27B0EE8/1636725132615_2.jpg?imwidth=64&impolicy=hq",
@@ -73,7 +73,7 @@ phones = [
     },
     {
         name     : "Samsung Galaxy A52s 5G 8 GB 128 GB Black",
-        price    :  "32,490",
+        price    :  32490,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALABALA8160128EE315BC/1630651134705_0.jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALABALA8160128EE315BC/1630651134707_1.jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALABALA8160128EE315BC/1630651134713_2.jpg?imwidth=64&impolicy=hq",
@@ -85,7 +85,7 @@ phones = [
     },
     {
         name     : "Oppo Reno 6 Pro 5G 12 GB 256 GB Aurora",
-        price    :  "40,990",
+        price    :  40990,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBOPPO-RENO-6-BALA816012E1E99BAA/1640150493555_1_th.jpeg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBOPPO-RENO-6-BALA816012E1E99BAA/1640150491923_2_1080.jpeg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBOPPO-RENO-6-BALA816012E1E99BAA/1640150491660_3_1080.jpeg?imwidth=64&impolicy=hq",
@@ -97,7 +97,7 @@ phones = [
     },
     {
         name     : "Apple iPhone 12 Mini 64 GB White",
-        price    :  "49,900",
+        price    :  49900,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBAPPLE-IPHONESUNR525049D2C8956/1611144492499_0.jpeg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBAPPLE-IPHONESUNR525049D2C8956/1611144500229_1.jpeg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBAPPLE-IPHONESUNR525049D2C8956/1611144491699_2.jpeg?imwidth=64&impolicy=hq",
@@ -109,7 +109,7 @@ phones = [
     },
     {
         name     : "I KALL Z5 3 GB 16 GB Blue",
-        price    :  "4,999",
+        price    :  4999,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBI-KALL-Z5-3-NIKO1056097C9E6E16/1633524743272_0..jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBI-KALL-Z5-3-NIKO1056097C9E6E16/1633524743719_1..jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBI-KALL-Z5-3-NIKO1056097C9E6E16/1633524744526_2..jpg?imwidth=64&impolicy=hq",
@@ -121,7 +121,7 @@ phones = [
     },
     {
         name     : "Vivo V21 5G 8 GB 256 GB Sunset Dazzle",
-        price    :  "32,990",
+        price    :  32990,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA2228026494C7A1/1620903930124_0..jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA2228026494C7A1/1620903930130_1..jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA2228026494C7A1/1620903930126_2..jpg?imwidth=64&impolicy=hq",
@@ -133,7 +133,7 @@ phones = [
     },
     {
         name     : "Apple iPhone 12 Mini 64 GB Black",
-        price    :  "49,990",
+        price    :  49990,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBAPPLE-IPHONESUNR52504EEFB6A95/1611144494479_0.jpeg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBAPPLE-IPHONESUNR52504EEFB6A95/1611144492418_1.jpeg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBAPPLE-IPHONESUNR52504EEFB6A95/1611144501350_2.jpeg?imwidth=64&impolicy=hq",
@@ -145,7 +145,7 @@ phones = [
     },
     {
         name     : "Realme C21Y 4 GB 64 GB Cross Blue",
-        price    : "10,500",
+        price    : 10500,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREALME-C21Y-APNI9930203787DECD/1631188979509_0..jpeg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREALME-C21Y-APNI9930203787DECD/1631188935127_1..jpeg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREALME-C21Y-APNI9930203787DECD/1631188974924_2..jpeg?imwidth=64&impolicy=hq",
@@ -157,7 +157,7 @@ phones = [
     },
     {
         name     : "Redmi 9i 4 GB 64 GB Sea Blue",
-        price    : "9,488",
+        price    : 9488,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREDMI-9I-4-GBALA816012CD83C2E6/1602508042640_0.jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREDMI-9I-4-GBALA816012CD83C2E6/1602508043692_1.jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREDMI-9I-4-GBALA816012CD83C2E6/1602508044627_2.jpg?imwidth=64&impolicy=hq",
@@ -169,7 +169,7 @@ phones = [
     },
     {
         name     : "Samsung Galaxy A72 8 GB 128 GB Black",
-        price    :  "34,999",
+        price    :  34999,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALAHARD40022A0A8FDBB/1615990485791_7..png?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALAHARD40022A0A8FDBB/1615990483749_0..png?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALAHARD40022A0A8FDBB/1615990483754_1..png?imwidth=64&impolicy=hq",
@@ -181,7 +181,7 @@ phones = [
     },
     {
         name     : "Redmi 9 Activ 6 GB 128 GB Carbon Black",
-        price    :  "12,199",
+        price    :  12199,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREDMI-9-ACTIAPNI99302091A1F96A/1638016695054_0..jpeg?imwidth=64&impolicy=hq",
          image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREDMI-9-ACTIAPNI99302091A1F96A/1638016694964_1..jpeg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREDMI-9-ACTIAPNI99302091A1F96A/1638016694879_2..jpeg?imwidth=64&impolicy=hq",
@@ -193,7 +193,7 @@ phones = [
     },
     {
         name     : "Oppo F19 Pro 8 GB 256 GB Crystal Silver",
-        price    :  "23,490",
+        price    :  23490,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBF19-PRO-8-GBFUTU629745B6301A28/1615201913664_0..jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBF19-PRO-8-GBFUTU629745B6301A28/1615201912941_1..jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBF19-PRO-8-GBFUTU629745B6301A28/1615201913250_3..jpg?imwidth=64&impolicy=hq",
@@ -205,7 +205,7 @@ phones = [
     },
     {
         name     : "I Kall Z1 4 GB 32 GB Blue",
-        price    :  "5,399",
+        price    :  5399,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBI-KALL-Z1-4-NIKO105609E3E6A3D8/1632300496217_0..jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBI-KALL-Z1-4-NIKO105609E3E6A3D8/1632300534726_1..jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBI-KALL-Z1-4-NIKO105609E3E6A3D8/1632300558817_2..jpg?imwidth=64&impolicy=hq",
@@ -216,7 +216,7 @@ phones = [
     },
     {
         name     : "Redmi 10 Prime 4 GB 64 GB Bifrost Blue",
-        price    : "13,190",
+        price    : 13190,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREDMI-10-PRIAPNI99302090C9369/1631957226939_0..jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREDMI-10-PRIAPNI99302090C9369/1631957226436_1..jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREDMI-10-PRIAPNI99302090C9369/1631957228620_2..jpg?imwidth=64&impolicy=hq",
@@ -228,7 +228,7 @@ phones = [
     },
     {
         name     : "Samsung Galaxy M31 6 GB 128 GB Ocean Blue",
-        price    :  "17,999",
+        price    : 17999,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALAAPNI99302093BB7FAC/0..jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALAAPNI99302093BB7FAC/1..jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALAAPNI99302093BB7FAC/2..jpg?imwidth=64&impolicy=hq",
@@ -240,7 +240,7 @@ phones = [
     },
     {
         name     : "Vivo Y33s 8 GB 128 GB Midday Dream",
-        price    : "18,990",
+        price    : 18990,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-Y33S-8-KIAA2228023F9712D9/1629284404944_0..jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-Y33S-8-KIAA2228023F9712D9/1629284404174_1..jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-Y33S-8-KIAA2228023F9712D9/1629284402669_2..jpg?imwidth=64&impolicy=hq",
@@ -252,7 +252,7 @@ phones = [
     },
     {
         name     : "Motorola E7 Power 4 GB 64 GB (Tahiti Blue)",
-        price    : "9,290",
+        price    : 9290,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBMOTOROLA-E7-ONE-4708169DBC3A4/1640590032257_2.jpeg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBMOTOROLA-E7-ONE-4708169DBC3A4/1640590032443_3.jpeg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBMOTOROLA-E7-ONE-4708169DBC3A4/1640590032442_4.jpeg?imwidth=64&impolicy=hq",
@@ -264,7 +264,7 @@ phones = [
     },
     {
         name     : "Realme 8i 4 GB 64 GB Space Purple",
-        price    :  "13,999",
+        price    :  13999,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREALME-8I-4-HG-A8636124DA861CA/1642489137435_0.jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREALME-8I-4-HG-A8636124DA861CA/1642489137430_1.jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREALME-8I-4-HG-A8636124DA861CA/1642489137361_2.jpg?imwidth=64&impolicy=hq",
@@ -276,7 +276,7 @@ phones = [
     },
     {
         name     : "Redmi 10 Prime 6 GB 128 GB Astral White",
-        price    : "15,340",
+        price    : 15340,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREDMI-10-PRIONE-47081DF9E62ED/1635578156842_0.jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREDMI-10-PRIONE-47081DF9E62ED/1635578156845_1.jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREDMI-10-PRIONE-47081DF9E62ED/1635578156845_2.jpg?imwidth=64&impolicy=hq",
@@ -288,7 +288,7 @@ phones = [
     },
     {
         name     : "Poco C3 4 GB 64 GB Matte Black",
-        price    :  "9,999",
+        price    : 9999,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBPOCO-C3-4-GBPRAX1170387A8EA5927/1634278154116_0.jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBPOCO-C3-4-GBPRAX1170387A8EA5927/1634278154114_1.jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBPOCO-C3-4-GBPRAX1170387A8EA5927/1634278154122_2.jpg?imwidth=64&impolicy=hq",
@@ -300,7 +300,7 @@ phones = [
     },
     {
         name     : "I Kall Z4 4 GB 32 GB Sky Blue",
-        price    : "5,499",
+        price    : 5499,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBI-KALL-Z4-4-NIKO10560989D20E76/1641205277159_1_th.jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBI-KALL-Z4-4-NIKO10560989D20E76/1641205277159_2_1080.jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBI-KALL-Z4-4-NIKO10560989D20E76/1641205277168_3_1080.jpg?imwidth=64&impolicy=hq",
@@ -312,7 +312,7 @@ phones = [
     },
     {
         name     : "Oppo A16 4 GB 64 GB Crystal Black",
-         price   : "12,990",
+         price   : 12990,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBOPPO-A16-4-GBALA816012E7D5CC50/1634539409910_0.png?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBOPPO-A16-4-GBALA816012E7D5CC50/1634539409915_1.png?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBOPPO-A16-4-GBALA816012E7D5CC50/1634539409917_2.png?imwidth=64&impolicy=hq",
@@ -324,7 +324,7 @@ phones = [
     },
     {
         name     : "Vivo Y21 4 GB 64 GB Diamond Glow",
-        price    : "13,990",
+        price    : 13990,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-Y21-4-GONE-47081FE3E1B00/1630327818119_0.jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-Y21-4-GONE-47081FE3E1B00/1630327804712_1.jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-Y21-4-GONE-47081FE3E1B00/1630327795324_2.jpg?imwidth=64&impolicy=hq",
@@ -336,7 +336,7 @@ phones = [
     },
     {
         name     : "Samsung Galaxy M12 4 GB 64 GB White",
-        price    : "11,930",
+        price    : 11930,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALAAPNI9930202AB3F7CB/1618218020655_0..jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALAAPNI9930202AB3F7CB/1618218020465_1..jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALAAPNI9930202AB3F7CB/1618218020488_2..jpg?imwidth=64&impolicy=hq",
@@ -348,7 +348,7 @@ phones = [
     },
     {
         name     : "Realme Narzo 50A 4 GB 128 GB Oxygen Green",
-        price    : "12,975",
+        price    : 12975,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREALME-NARZOAPNI993020F1D93A80/1638274156353_0..jpeg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREALME-NARZOAPNI993020F1D93A80/1638274169744_1..jpeg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBREALME-NARZOAPNI993020F1D93A80/1638274171525_2..jpeg?imwidth=64&impolicy=hq",
@@ -360,7 +360,7 @@ phones = [
     },
     {
         name     : "OPPO A54 4 GB 64 GB Moonlight Gold",
-        price    : "13,490",
+        price    : 13490,
         ram      : "4 GB RAM",
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBOPPO-A54-4-GBALA8160125241A249/1634034369415_0.jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBOPPO-A54-4-GBALA8160125241A249/1634034326313_1.jpg?imwidth=64&impolicy=hq",
@@ -372,7 +372,7 @@ phones = [
     },
     {
         name     : "I KALL Z7 4 GB 32 GB Grey",
-        price    : "6,499",
+        price    : 6499,
         image_fr : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBI-KALL-Z7-4-NIKO1056092EF48E86/1638531336566_0..jpg?imwidth=64&impolicy=hq",
         image_bk : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBI-KALL-Z7-4-NIKO1056092EF48E86/1638531336654_1..jpg?imwidth=64&impolicy=hq",
         image_le : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBI-KALL-Z7-4-NIKO1056092EF48E86/1638531336657_2..jpg?imwidth=64&impolicy=hq",
@@ -383,4 +383,4 @@ phones = [
         battery  : "4000mAh Battery"
     }
 ]
-localStorage.setItem("smartPhones", JSON.stringify(phones));
+localStorage.setItem("smartPhones", JSON.stringify(phones)); 
