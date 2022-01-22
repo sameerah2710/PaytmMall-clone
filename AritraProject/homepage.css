@@ -259,13 +259,17 @@
 .flash-div>a>button{
     align-items: center;
     margin-left: 46%;
-    background-color:orangered;
+    background-color:rgb(255, 30, 0);
+    letter-spacing: .5px;
     border: none;
-    width:7%;
+    width:6.5%;
     height:30px;
     border-radius:20px;
     color:white;
     font-weight: bold;
+}
+.flash-div>a>button:hover{
+    background-color:#d30c0c;;
 }
 
 
@@ -331,5 +335,75 @@
 }
 
 
+
+
+.footer-first>h4{
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing: .5px;
+    
+}
+.footer-first>p,pre{
+    font-size: 12px;
+    font-family: sans-serif;
+    line-height:18px;
+}
+.footer-first>h5{
+    font-size: 14.25px;
+    font-family: sans-serif;
+}
+.footer-first>pre>span{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.span1{
+    font-size: 12px;
+    font-weight: normal;
+    font-family: sans-serif;
+    text-decoration: none;
+    color:rgba(38, 0, 255, 0.692);
+}
+.footer-flex{
+    display:grid;
+    grid-template-columns: repeat(4,23%);
+    grid-gap: 2%;
+    
+    margin-top: 50px;
+    
+
+}
+.footer-flex>div{
+    align-items: center;
+    width: 100%;
+    margin: auto;
+
+}
+.footer-flex>div>img{
+    margin-left: 49%;
+    
+    width: 6%;
+    height: 20px;
+
+}
+.p1{
+    text-align: center;
+    color:rgba(0, 0, 0, 0.39);
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 14px;
+    
+}
+.p2{
+    text-align: center;
+    font-size: 11px;
+    font-family: sans-serif;
+    color:rgba(34, 34, 34, 0.671);
+}
+.p2>span{
+    font-size: 11px;
+    font-family: sans-serif;
+    color:orangered;
+}
 
 
