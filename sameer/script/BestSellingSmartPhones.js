@@ -4,8 +4,7 @@ showallProducts();
 
 function showallProducts(){
     let maindiv = document.getElementById("sMImages")
- maindiv.innerHTML = null
-    
+ maindiv.innerHTML = null 
     smartPhones.forEach(function(ele){
         let div = document.createElement('div');
         let div1 = document.createElement('div');
@@ -18,7 +17,9 @@ function showallProducts(){
         image.src = ele.image_fr;
         name.innerText = ele.name;
         pPrice.innerText = "M.R.P ₹ " + ele.price;
-
+        div.addEventListener("click",function(){
+            singleProduct(ele)
+        } )
         div1.append(image);
         div.append(div1, name, pPrice);
         maindiv.append(div);
@@ -47,3 +48,12 @@ function sort(){
          showallProducts();
     }
 }
+function singleProduct(ele){
+    console.log(ele);
+  let  singleProductElement = [];
+    singleProductElement.push(ele);
+    localStorage.removeItem("SingleProduct");
+    localStorage.setItem("SingleProduct", JSON.stringify(singleProductElement));
+    window.location.href = "";
+}
+
