@@ -54,6 +54,6 @@ function singleProduct(ele){
     singleProductElement.push(ele);
     localStorage.removeItem("SingleProduct");
     localStorage.setItem("SingleProduct", JSON.stringify(singleProductElement));
-    window.location.href = "";
+    window.location.href = "demopro.html";
 }
 
