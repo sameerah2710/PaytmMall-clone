@@ -1,3 +1,4 @@
+@import "./reset.css";
 .top-bar {
     margin-bottom: -30px;
    
@@ -97,7 +98,14 @@
     margin-top: 21px;
 } */
 
-
+#main-header{
+    position: sticky;
+    top: 0;
+    background-color:white;
+    z-index: 1000;
+    height: 100px;
+    margin-bottom:30px;
+}
 .first-button{
     display: flex;
     width: 13%;
@@ -396,6 +404,18 @@
     margin-left: 23%;
     transition: all .5s ease-in-out;
     position: relative;
+}
+#product-caro-inner5>div>img{
+    width:110px;
+    height:48%;
+    margin-left: 23%;
+    transition: all .5s ease-in-out;
+    position: relative;
+}
+#product-caro-inner6>div>img{
+    width:110px;
+    height:48%;
+    
 }
 .price{
     text-align: center;
