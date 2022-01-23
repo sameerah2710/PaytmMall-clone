@@ -312,12 +312,13 @@ h4 + img {
   height: 60%;
   text-align: center;
 }
-.org {
+#org {
   /* border: 1px solid red; */
 
   color: orangered;
   font-size: 18px;
   font-weight: bolder;
+  height: 20px;
 }
 #sp {
   /* border: 1px solid red; */
@@ -347,7 +348,7 @@ h4 + img {
   /* border: 1px solid teal; */
 }
 #deal3 {
-  border: 2px solid;
+  /* border: 2px solid; */
 
   width: 27%;
   height: 600px;
@@ -357,7 +358,7 @@ h4 + img {
 }
 
 .deal9 {
-  border: 2px solid;
+  /* border: 2px solid; */
   /* small image  */
   width: 70%;
   height: 150px;
@@ -372,11 +373,13 @@ h4 + img {
        height: 80%;
    } */
 
-#deal10 {
+.deal10 {
   /* big image */
+  /* border: 1px solid blue; */
   margin-top: 10px;
-  height: 600px;
-  width: 6 0%;
+  
+  height: 100%;
+  width: 100%;
 }
 
 #side {
@@ -396,6 +399,10 @@ h4 + img {
     margin-left: auto;
     line-height: 8px;
 }
+#nameT{
+  /* border: 1px solid blue; */
+  height: 20px;
+}
 #info p{
 /* border: 1px solid; */
 font-size: 20px;
@@ -414,12 +421,16 @@ font-size: 20px;
     display: flex;
     align-items: center;
     color: orangered;
+    
 }
 #buy{
-    border: 1px solid;
+    /* border: 1px solid; */
     height: 50%;
     width: 30%;
-    
+    margin-top: 15px;
+align-items: center; 
+font-weight: bolder;
+font-size: 20px;   
 }
 #pytm{
     /* border: 1px solid; */
