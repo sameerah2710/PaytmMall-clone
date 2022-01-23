@@ -74,7 +74,7 @@
     </div>
 
     <div id="main-header-inner">
-      <button class="first-button">
+      <button id="first-btn" type="button" onClick="shopCategories()" class="first-button">
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAdklEQVRIie3SwQkCMRBG4Tc5ZNtZ04VrByHF2IsEKzAWIaxpZ3MZL54NSGAR52tghp8HZm8CoJxdC48I4NdbFtChB7ZwSqJ6AVDVNNV7BmiH5etD/lkEwI348pP3REibjxFEfS3XkRP9Pquoyyrqsoq6rKI/8AKOy1QQPKE/NgAAAABJRU5ErkJggg==" alt="">
         <p>Shop By Category</p>
       </button>
@@ -123,13 +123,15 @@
         <button class="btn-primary" id="left" onClick="buttonClick(-1)"><img class ="btn-img"src="https://cdn-icons-png.flaticon.com/512/54/54321.png" alt=""></button>
       
         
-      <div id="first">
-        <img
-          src="https://assetscdn1.paytm.com/images/catalog/view_item/783440/1617031913307.png?imwidth=140&impolicy=hq"
-          alt=""
-        />
-        <p>Mobiles</p>
-      </div>
+      <a href="" class="a-tag">
+        <div  id="first">
+          <img
+            src="https://assetscdn1.paytm.com/images/catalog/view_item/783440/1617031913307.png?imwidth=140&impolicy=hq"
+            alt=""
+          />
+          <p>Mobiles</p>
+        </div>
+      </a>
       <div id="second">
         <img
           src="https://assetscdn1.paytm.com/images/catalog/view_item/783439/1617031733329.png?imwidth=140&impolicy=hq"
@@ -1635,7 +1637,6 @@
       console.log(k);
       productCaroRender_3(k);
   }
-
 
 
 </script>
