@@ -1,0 +1,103 @@
+#content > #payment{
+    border: 1px transparent green;
+    width: 29%;
+}
+#payment > #payAddress{
+    width: 100%;
+    height: 180px;
+    background-color: white;
+    padding-top: 25px;
+}
+.Head{
+    border: 1px transparent red;
+    margin-bottom: 0px;
+    display: flex;
+    padding-left: 21px;
+}
+.Head > div{
+    display: flex;
+}
+.Head img{
+    width : 40px;
+    height : 40px;
+    margin-right: 13px;
+}
+.Head p{
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+.Head #addAddress{
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 10px;
+}
+#payment > div > hr{
+    border:  1px solid rgb(236, 236, 236);
+}
+#payAddress > #dDetails{
+    border: 1px solid rgb(235,235,235);
+    border-radius: 4px;
+    width: 80%;
+    margin: auto;
+    margin-top: 0px;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#dDetails p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+#dDetails span{
+    font-weight: 700;
+}
+#dDetails #changedDetails{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+}
+#payment > #paySummary{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    margin-top: 20px;
+    padding-top: 25px;
+}
+#payDetails > div{
+    border:1px transparent red;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin-top: 25px;
+}
+#payDetails hr{
+    border:  1px solid rgb(209, 209, 209);
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 5%;
+}
+.log{
+    border: none;
+    height: 50px;
+    width: 89%;
+    background-color: rgb(239, 78, 40);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 2px;
+}
+#payDetails > #continue{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+}
