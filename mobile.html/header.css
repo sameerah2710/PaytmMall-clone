@@ -1,0 +1,82 @@
+.top-bar {
+    margin-bottom: -30px;
+}
+.top-bar > a > img {
+    margin-left: 46%;
+    width: 8%;
+}
+.first-button {
+    display: flex;
+    width: 13%;
+    margin-left: 1%;
+    margin-top: 6px;
+    height: 41px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+}
+.first-button > img {
+    margin-top: 6px;
+    margin-left: 14px;
+}
+.first-button > p {
+    font-size: 12px;
+    margin-top: 10.5px;
+    font-weight: bold;
+    margin-left: 5%;
+    font-family: sans-serif;
+}
+#main-header-inner {
+    display: flex;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+}
+#main-header-inner > a {
+    text-decoration: none;
+}
+.input-group {
+    width: 60%;
+}
+.search-image {
+    margin-left: -3.25%;
+    width: 1.75%;
+    height: 20px;
+    margin-top: 11px;
+}
+.input-tag {
+    margin-left: 2%;
+    width: 95%;
+    height: 37px;
+    border: 1px solid rgba(128, 128, 128, 0.432);
+}
+#second-button {
+    margin-left: 32%;
+    width: 100px;
+    border: none;
+    display: flex;
+    background-color: white;
+}
+#second-button > img {
+    margin-top: 10px;
+    height: 21px;
+}
+#second-button > p {
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 5px;
+    text-decoration: "none";
+}
+p{
+    color: black;
+}
+.oblique {
+    margin-top: 1%;
+}
+#third-button {
+    margin-top: 2px;
+    width: 100px;
+    border: none;
+    display: flex;
+    margin-left: -5%;
+    background-color: white;
+}
