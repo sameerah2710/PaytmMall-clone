@@ -23,7 +23,7 @@
                     <img class="border-radius" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1rBgZWpUQU3xbk-s7_8OVWS1DleRzCMWx2Ev3QAkX3Y3-Uk7k" alt="">
                    <p><span id="total"></span>in your bag</p>
                </div>
-               <div id="logIn1" class="logInToProceed pointer" class="font-color pointer" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Select Address</div>
+               <div id="logIn1" class="logInToProceed pointer" class="font-color pointer" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Login To Proceed</div>
             </div>
             <hr>
             <div id="cartContent"></div>
@@ -90,33 +90,34 @@ let myOrder = JSON.parse(localStorage.getItem("allOrders")) || [];
 import { pay, cardPayment, otp } from "./components/payments.js";
 import { addAddress, selectAddress } from "./components/addressComponents.js";
 let allAddresses = JSON.parse(localStorage.getItem("userAddresses")) || [];
-// let allCartItems = JSON.parse(localStorage.getItem("cart"));
-let allCartItems = [
-{
-        name      : "Vivo V21 5G 8 GB 256 GB Dusk Blue",
-        price     : "32,990" ,
-        image_fr  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA22280264AC3BB7/1620903930202_0..jpg?imwidth=64&impolicy=hq",
-        image_bk  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA22280264AC3BB7/1620903931945_1..jpg?imwidth=64&impolicy=hq",
-        image_le  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA22280264AC3BB7/1620903932429_2..jpg?imwidth=64&impolicy=hq" ,
-        image_ri  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA22280264AC3BB7/1620903933343_3..jpg?imwidth=64&impolicy=hq",
-        image_top :"https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA22280264AC3BB7/1620903933145_4..jpg?imwidth=64&impolicy=hq" ,
-        ram       : "8 GB RAM " ,
-        display   : "16.36 cm (6.44 inch) Full HD+ Display",
-        battery   : "4000 mAh Lithium-ion Battery"
-    },
-    {
-        name      : "Vivo X60 Pro 12 GB 256 GB Midnight Black",
-        price     : "49,990",
-        image_fr  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802BA2F236C/1616587381643_1..jpg?imwidth=64&impolicy=hq",
-        image_bk  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802BA2F236C/1616587395537_2..jpg?imwidth=64&impolicy=hq",
-        image_le  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802BA2F236C/1616587392598_3..jpg?imwidth=64&impolicy=hq",
-        image_ri  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802BA2F236C/1616587383696_4..jpg?imwidth=64&impolicy=hq",
-        image_top : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802BA2F236C/1616587367993_6..jpg?imwidth=64&impolicy=hq",
-        ram       : "12 GB RAM ",
-        display   : "16.65 cm (6.56 inch) Full HD Plus",
-        battery   : "4200 mAh Battery"
-    }
-];
+let allCartItems = JSON.parse(localStorage.getItem("cart")) || [];
+console.log(allCartItems);
+// let allCartItems = [
+// {
+//         name      : "Vivo V21 5G 8 GB 256 GB Dusk Blue",
+//         price     : "32,990" ,
+//         image_fr  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA22280264AC3BB7/1620903930202_0..jpg?imwidth=64&impolicy=hq",
+//         image_bk  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA22280264AC3BB7/1620903931945_1..jpg?imwidth=64&impolicy=hq",
+//         image_le  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA22280264AC3BB7/1620903932429_2..jpg?imwidth=64&impolicy=hq" ,
+//         image_ri  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA22280264AC3BB7/1620903933343_3..jpg?imwidth=64&impolicy=hq",
+//         image_top :"https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-V21-5G-KIAA22280264AC3BB7/1620903933145_4..jpg?imwidth=64&impolicy=hq" ,
+//         ram       : "8 GB RAM " ,
+//         display   : "16.36 cm (6.44 inch) Full HD+ Display",
+//         battery   : "4000 mAh Lithium-ion Battery"
+//     },
+//     {
+//         name      : "Vivo X60 Pro 12 GB 256 GB Midnight Black",
+//         price     : "49,990",
+//         image_fr  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802BA2F236C/1616587381643_1..jpg?imwidth=64&impolicy=hq",
+//         image_bk  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802BA2F236C/1616587395537_2..jpg?imwidth=64&impolicy=hq",
+//         image_le  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802BA2F236C/1616587392598_3..jpg?imwidth=64&impolicy=hq",
+//         image_ri  : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802BA2F236C/1616587383696_4..jpg?imwidth=64&impolicy=hq",
+//         image_top : "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-X60-PROKIAA222802BA2F236C/1616587367993_6..jpg?imwidth=64&impolicy=hq",
+//         ram       : "12 GB RAM ",
+//         display   : "16.65 cm (6.56 inch) Full HD Plus",
+//         battery   : "4200 mAh Battery"
+//     }
+// ];
 document.querySelector("#total").innerText = allCartItems.length + " Items "
 document.querySelector("#HeaderCartPage").addEventListener("click", LogInOut);
 
@@ -133,6 +134,8 @@ document.querySelector("#addAddress").addEventListener("click", function(){
 })
 let cartItemsDiv = document.querySelector("#cartContent");
 let a = allCartItems[0];
+
+
 function showCart(){
     cartItemsDiv.innerHTML = null;
     allCartItems.forEach(function(ele){
@@ -148,7 +151,6 @@ function showCart(){
             tPrice.innerText = "₹" + ele.price;
             a = ele;
         });
-
         image.src = ele.image_fr;
         h2.innerText = ele.name;
         ram.innerText = ele.ram;
