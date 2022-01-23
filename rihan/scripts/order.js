@@ -1,5 +1,42 @@
 /** @format */
 
+let orderData = [
+	{
+		image_fr:
+			"https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBAPPLE-IPHONESUNR52504EEFB6A95/1611144494479_0.jpeg?imwidth=282&impolicy=hq",
+		name: "Samsung Galaxy S20 FE 8 GB 128 GB Cloud Mint",
+		price: "रु41990",
+		status: "Payment Failed",
+		token: Math.floor(Math.random() * 171245789652),
+	},
+	{
+		image_fr:
+			"https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBSAMSUNG-GALAAPNI993020E2B4397E/1618218020020_0..jpg?imwidth=282&impolicy=hq",
+		name: "Vivo Y72 5G 8 GB 128 GB Prism Magic",
+		price: "रु 13999",
+		status: "Payment Failed",
+		token: Math.floor(Math.random() * 171245789652),
+	},
+	{
+		image_fr:
+			"https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBVIVO-Y53S-8-KIAA222802F2233326/1628335579672_0..jpg?imwidth=280&impolicy=hq",
+		name: "Vivo Y53s 8 GB 128 GB Fantastic Rainbow",
+		price: "रु 18490",
+		status: "Payment Failed",
+		token: Math.floor(Math.random() * 171245789652),
+	},
+	{
+		image_fr:
+			"https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBOPPO-F19-PROSHYA862930E590B23E/1624361012233_0.jpg?imwidth=282&impolicy=hq",
+		name: "OPPO F19 6 GB 128 GB Prism Black",
+		price: "रु 19990",
+		status: "Payment Failed",
+		token: Math.floor(Math.random() * 171245789652),
+	},
+];
+
+localStorage.setItem("orderData", JSON.stringify(orderData));
+
 let orderArr = JSON.parse(localStorage.getItem("orderData")) || [];
 console.log(orderArr);
 let appendDiv = document.getElementById("append-div");
@@ -48,7 +85,7 @@ function showDatas(orderArr) {
 	appendDiv.innerHTML = "";
 	empty_div.innerHTML = "";
 	if (orderArr.length !== 0) {
-		orderArr.forEach(({ image_url, price, productName, token, status }) => {
+		orderArr.forEach(({ image_fr, price, name, token, status }) => {
 			let order_status = document.createElement("div");
 			order_status.setAttribute("class", "order-status");
 			let order_number = document.createElement("p");
@@ -61,13 +98,13 @@ function showDatas(orderArr) {
 			let image_div = document.createElement("div");
 			image_div.setAttribute("class", "image-div");
 			let image = document.createElement("img");
-			image.src = image_url;
+			image.src = image_fr;
 			image_div.append(image);
 			let details_div = document.createElement("div");
 			let order = document.createElement("h2");
 			order.innerHTML = status;
 			let product = document.createElement("p");
-			product.innerHTML = productName;
+			product.innerHTML = name;
 			let prices = document.createElement("h2");
 			prices.innerHTML = price;
 			details_div.append(order, product, prices);
@@ -118,7 +155,7 @@ function showData() {
 	appendDiv.innerHTML = "";
 	empty_div.innerHTML = "";
 	if (orderArr.length !== 0) {
-		orderArr.forEach(({ image_url, price, productName, token, status }) => {
+		orderArr.forEach(({ image_fr, price, name, token, status }) => {
 			let order_status = document.createElement("div");
 			order_status.setAttribute("class", "order-status");
 			let order_number = document.createElement("p");
@@ -131,13 +168,13 @@ function showData() {
 			let image_div = document.createElement("div");
 			image_div.setAttribute("class", "image-div");
 			let image = document.createElement("img");
-			image.src = image_url;
+			image.src = image_fr;
 			image_div.append(image);
 			let details_div = document.createElement("div");
 			let order = document.createElement("h2");
 			order.innerHTML = status;
 			let product = document.createElement("p");
-			product.innerHTML = productName;
+			product.innerHTML = name;
 			let prices = document.createElement("h2");
 			prices.innerHTML = price;
 			details_div.append(order, product, prices);
