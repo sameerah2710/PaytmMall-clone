@@ -1,0 +1,181 @@
+/** @format */
+
+body {
+	scroll-behavior: smooth;
+	background-color: rgb(245, 247, 247);
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+		"Segoe UI", sans-serif;
+	font-style: normal;
+}
+.border-radius {
+	border-radius: 50%;
+}
+.font-color {
+	color: rgb(239, 78, 40);
+}
+.pointer:hover {
+	cursor: pointer;
+}
+#HeaderCartPage {
+	border: 1px transparent red;
+	position: sticky;
+	top: 0;
+	margin-top: 20px;
+	/* height: 50px; */
+	width: 100%;
+	background-color: white;
+}
+#content {
+	border: 1px transparent red;
+	width: 95.6%;
+	margin: auto;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* pop up add address */
+
+#offcanvasRight {
+	width: 450px;
+}
+#abb {
+	/* border: 2px solid black; */
+	width: 100%;
+	margin: auto;
+}
+#hd {
+	justify-content: space-between;
+	margin-bottom: 20px;
+	position: sticky;
+}
+#hd div {
+	display: flex;
+	align-items: center;
+}
+#hd > div {
+	justify-content: space-between;
+}
+#hd > button {
+	margin-top: 5px;
+}
+h5 {
+	margin-left: 20px;
+}
+#heading {
+	margin-bottom: 50px;
+}
+#savedAddress > p {
+	color: rgb(239, 78, 40);
+	font-weight: 500;
+	font-size: 14px;
+}
+#myFormDiv {
+	overflow: scroll;
+	height: 480px;
+}
+.pincode {
+	border: 1px transparent red;
+	height: 40px;
+	width: 90%;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+.pincode::placeholder {
+	color: rgb(163, 161, 161);
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 13px;
+}
+#checkbox {
+	margin-top: 20px;
+	font-size: 10px;
+	color: red;
+}
+#addressTitle {
+	display: flex;
+}
+#Done {
+	position: sticky;
+	width: 94%;
+}
+#myFormDiv input {
+	border: none;
+	outline: none;
+}
+#myFormDiv hr {
+	margin-top: 0px;
+	width: 90%;
+}
+
+#showAllAddress {
+	overflow: scroll;
+	height: 500px;
+}
+#showAllAddress > div {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+#showAllAddress > div > p {
+	margin-top: 5px;
+}
+#showAllAddress span {
+	font-size: 15px;
+	font-weight: 600;
+}
+#showAllAddress > div > div {
+	display: flex;
+	margin-top: 5px;
+}
+#showAllAddress > p {
+	margin-right: 10px;
+}
+#showAllAddress > div > div:nth-child(1) {
+	justify-content: space-between;
+}
+#logo {
+	border: 1px transparent red;
+	width: 100%;
+	height: 100px;
+}
+#logo img {
+	height: 100%;
+	width: 100%;
+}
+#paymentOptions h1 {
+	text-align: center;
+	margin-top: 40px;
+	font-size: 20px;
+	font-weight: 600;
+}
+#paymentOptions p {
+	margin-top: 40px;
+	margin-left: 60px;
+}
+#cardPayment {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#myCardFormDiv,
+#otpInput {
+	width: 60%;
+	margin: auto;
+}
+#myCardFormDiv input,
+button,
+input {
+	width: 100%;
+	height: 40px;
+	outline: none;
+}
+
+#otpInput {
+	margin-top: 60px;
+}
+#otpInput input {
+	margin-bottom: 20px;
+}
