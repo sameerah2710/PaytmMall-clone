@@ -97,7 +97,7 @@ function showDatas(orderArr) {
 		empty_div.append(p, image, div);
 		div.append(btn);
 		btn.addEventListener("click", () => {
-			window.location.href = "./order.html";
+			window.location.href = "./AritraProject/homepage.html";
 		});
 	}
 }
@@ -167,7 +167,7 @@ function showData() {
 		empty_div.append(p, image, div);
 		div.append(btn);
 		btn.addEventListener("click", () => {
-			window.location.href = "./order.html";
+			window.location.href = "./AritraProject/homepage.html";
 		});
 	}
 	orderId.value = "";
@@ -199,7 +199,7 @@ function showEmpty() {
 	empty_div.append(p, image, div);
 	div.append(btn);
 	btn.addEventListener("click", () => {
-		window.location.href = "./order.html";
+		window.location.href = "./AritraProject/homepage.html";
 	});
 	orderId.value = "";
 }
