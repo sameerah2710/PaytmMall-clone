@@ -134,7 +134,7 @@ function showDatas(orderArr) {
 		empty_div.append(p, image, div);
 		div.append(btn);
 		btn.addEventListener("click", () => {
-			window.location.href = "./homepage.html";
+			window.location.href = "./index.html";
 		});
 	}
 }
@@ -204,7 +204,7 @@ function showData() {
 		empty_div.append(p, image, div);
 		div.append(btn);
 		btn.addEventListener("click", () => {
-			window.location.href = "./homepage.html";
+			window.location.href = "./index.html";
 		});
 	}
 	orderId.value = "";
@@ -236,7 +236,7 @@ function showEmpty() {
 	empty_div.append(p, image, div);
 	div.append(btn);
 	btn.addEventListener("click", () => {
-		window.location.href = "./homepage.html";
+		window.location.href = "./index.html";
 	});
 	orderId.value = "";
 }
