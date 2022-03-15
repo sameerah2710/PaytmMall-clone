@@ -1,0 +1,529 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			rel="shortcut icon"
+			href="https://www.seekpng.com/png/full/769-7692988_paytm-mall-logo.png"
+		/>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>my orders</title>
+		<link rel="stylesheet" href="./styles/order.css" />
+	</head>
+	<body>
+		<header>
+			<div class="main-header">
+				<div class="top-bar">
+					<a href="homepage.html">
+						<img
+							src="data:image/png;base64,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"
+						/>
+					</a>
+				</div>
+
+				<div id="main-header-inner">
+					<button
+						id="first-btn"
+						type="button"
+						onClick="shopCategories()"
+						class="first-button"
+					>
+						<img
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAdklEQVRIie3SwQkCMRBG4Tc5ZNtZ04VrByHF2IsEKzAWIaxpZ3MZL54NSGAR52tghp8HZm8CoJxdC48I4NdbFtChB7ZwSqJ6AVDVNNV7BmiH5etD/lkEwI348pP3REibjxFEfS3XkRP9Pquoyyrqsoq6rKI/8AKOy1QQPKE/NgAAAABJRU5ErkJggg=="
+							alt=""
+						/>
+						<p>Shop By Category</p>
+					</button>
+
+					<div class="input-group">
+						<input
+							type="text"
+							class="input-tag"
+							placeholder="Search for a Product, Brand or Category"
+						/>
+						<img
+							class="search-image"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAACz0lEQVRIie3Wz0scZxzH8fd31pmhMQcv9ZBIKW0KBZNWd0POSUxSrIFsAvsPNIfSUrQUJDl6CjESci7Wv0CMPxA0CRZ7i1A1GIVcRBpCU+y1ks7PTw7OllhWd1Y0Jz+nZ3ef53k9zzyz3xk4ynuK1eug9ooX+ltlE2WMIqItG/kKsShj0guaJ2xtNDwwOCj23LBUQxif1JlnXeb0+0vT43lhp9aXYsAJil/fM2ksQ1eAPqF2N4mPu0l8XGlyGvEj8Bz41JQ+DDq774qBmnP+PzV3vI3SDwQYfe7SuWFjIN1tkVHnwrdgDwBfaNBfnrndMBwUe26YNAYEhr5yl2d+y7ODqOPqeVk6C/iSrvvPZib26r/jsqi94lmqoWxJfXlRAPfZ9DyynwDMnCGVSm5uOPS3ytUzdZfODedF/8M/O/YzxiroVJi2XssNm3Q9a/2y25nuFRsdTUAjAGZOOTcMVgQQ6VyjaDVK0idZ62wj8AkAL3zzcr+w96+/PVZ2sgH4ANIS1a2GNWD9CRB6H3y0Xzd841TH/tUAzO8AJru8X9gp6AoA0tPcsIxJAIybeUvfjvGVSkHYNwDCpnLDXtA8AawDZ7bLYGOJ1v/5DtQObHgtW3s+MHb+j9dGQ5nTn316EHVcPZ8b/bLnArL7AI7Ra/PzcW4YwF+aHhcaBHxZOht29HyvSqWw2wSqVAphsfsHOZoFPGCzIC3UW2jNW18MOGHnwh3DbmW9VkEjStInXhz8ARAWmj+2Jl1GdjO7vACbQCvGqhvHXbbyeLMhuJqgo7ts5gyBTtXZwIZj9BakhcjsV8Tpenj9V59SyQ3T1mtmThmpBNYGMrDXSE+FTXktW+PVM9UXV1qjpqa5eniuKtNo1Nn9YYTNAWeAF66TXLTFR68PHc6DH3ytzmLLM3+7SXxp+8bk8ygtTL77+6HBALbyeNON4y5gEUgO0zrKrnkLApsooeRLe24AAAAASUVORK5CYII="
+						/>
+					</div>
+
+					<a href="">
+						<button id="second-button">
+							<img
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAADhklEQVR4nO2byWsUQRTGv1c9PWYQ9SBE1IMKkotjGBSNmIAa45K460kvihDyD/hviBcvUUQRES8KMZmMGlcURD1k1OQSxOWgKILgGtM9Xc+DM1kuWtWpnpqQ+p26mn7f++pNVy9T1YDD4XDMYihuIGf3LgrS0TYBuQQsYutMC5IsJd6nS/5tGrr+KZaEbgCvbVsQyvRJAMcAeHGSJkAJROd9X56gJ4VvOoFaBeD1BxaGYfAA4FV6/qoEYcgfizbR8M0vqiEpHf0gDC7SlM7zYxA9ZebfOjqmIKI6MJoAbPhrB9lS2rsAYK+yhuqB4dqdLSzFw3KTAepMD+bP6RhOiiDX3gmibpT7QxAb/cG+xyqxQjUJR+LgpOalWuk8AKSLhbMgulxpM/iQaqx6AQQaJhJQv7q96sCSxz0RuOFfx05GuQDEPHc8iOmjurXqICA+VLYZPE89bpbjCmDbgG20ngP+R7imvRUs1pnUnILEU/95/p5JSWMFGG3cs4I5ugVwco/HAqXRxj0NmRe9b8xJzjREyCbljJ0BmRe9b8Lc7jaJqA1kdmgBABglAe92ptj/1qSsUaN+se8+gPsmNZNm5g0Bw7gC2DZgG2PXAF7ZPiecTwUwNmMaf7X9KwWAe/537qBXhTFTosbOgHAerQZjC5LpPMq6reF8kTUpaqwA/nd+CeAu/v5SScAA3fG/ySGTosaGQPm03GpKr1rM+ougK4BtA7ax9zrMLCNGT93z/hGTHnSx9zpMgCB0AVhpykMc3BAwJaT7OiyAnxF7V0zlj4t7HbZtwDauALYN2MYVwLYB27gC2DZgG1cA2wZsM+sLYH4KyyCjuZ3LPSF2RVLmM8UbRqfEKtT0GeCRNwDGaY+8gaRy1HQBJmCZlHJNDwGZwg4RYZ/0qCepHDVdgLpn+dcATiWZY4YMgeRQXyjJ9KOyLUkuTsZOfCSipZVtApRXjKsvlCSMTGzTLnVr1WGyJznJ6//QWSl6bbzBfCTItXcqu0uYYE1HF4DDlTYBV1VjtWZyx3IdvUTYPb6D8QREjwj4rKNjCgbXA2gBsL6yj4Aef7B/v6qG1l0gHUZHwzneAzCy5WxNADclNR0cg5epIDquE6B1F6Dhm198n5vBfAZASctaspQAdPu/Us06X4sA0/loqnF7fSBSbQJYJokXxNWZDoLpqwTepYkHaLBgZRg6HA7HjOYP0oEQ7mVTJb0AAAAASUVORK5CYII="
+								alt=""
+							/>
+							<p>My Order</p>
+						</button>
+					</a>
+					<a href="">
+						<button id="second-button">
+							<img
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAADI0lEQVRYheWVy28TVxTGf+d6xi4hQd2gJoRGEWLBo2oyGVKJroEQEyReXsG2YdlFxQL+gHbDlg37LgqVeLSNKxFggSDlERuoCumigAiEZgdUtcmMPacLjyM/xomDnU35pNHM3HPu930658wd+NAhK92gm0cTfpcZR/Uowmfh8u+Ifm8vdJ6VP857q2YgNzDWa5ngF2CgAVvWV2tsbfbyXLOcptlE3TyaqBB/pMoBO2ets3PWOlU9CMygODb+T7o9FW+W12o20e+S46H4Y9t4X8r05JuK8EV1d133g/hvIEN+4t+vgDPN8DZdAeAogCona8QBkOnJNyrmFADKsWZJV2BAtgHE89a1Rhlxu3g1NLB9FQxoJ4D8efmfRhlyO/229EDXKhj40OE5yZve4L4b7corI/IgUhDfST4B+lfgcSk8s7MTmwS0NhA5A/7A2HAbxQH6/cG9O6ICkQeRxoopUUFFTycy6ROtKHvOvtOg36gxKeBubTyyAhLIodJdz7UiDkAg5wBESWlEy+sMeANjXyBsAp7a93+916p+/MHPd4C/aNCGOgMaK6YAFH6IGpr3gaI/AoRtaGxAQUTlMIAgneqO9LQs7o70CGYtgChHattQ9aKDBz72xZsCtoRLRZAZCO6BmRZ4HASFV3ErPk8xVpD7F1+X9xErWl7B+8QYq0dhKwQumB2gW4BYyDdja3xneV+dAYAFJ/mtwEngGbABaPrf3gAeMAf0K3yXyE6cqgxGfIY6BEKAfJ34qONKIZ9zFB0G3SYiPQrdAhsUeit3CbxUmBP4W1VfgTwS5K61piO78C6326CXStzVqDMgyBBAUAwyMnU+D9wKryr4TnJWYWP4OmtnJ/oalSD3+WjGxGSRuxJVQ5h39/cB64H5jofpF40IS0Z1XOAFMCvC+FK5Idc8sD7UWERVBYyqC6DI9FKEAFY2nQY+XS6vDIWMwKgpFoaA54ua1VlBuUTLGngPlDjFVLWh9iByQyOZtsuLKXO6lcu1Q+gAiMgFz0m214AG5YfoCuTd/X0C3e1VrYdAd254z/Kz4zlJ9Zxky/+CdvH8f/EfNL4ZezEYaJYAAAAASUVORK5CYII="
+								alt=""
+							/>
+							<p>Add to Bag</p>
+						</button>
+					</a>
+					<a href="">
+						<button id="second-button">
+							<img
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAADLUlEQVRIid2VT2hcVRTGf+fN+5M/VXcFpaJoK2iQZjIluNK4qDVJoWNhUNwoFpTiIlAaKqIyIGjaWLpwIaV0oTtNq0lpM/gH1GWjM5OqFbGNICnGFgSVJva9l3mfi76Jk5lJbZb6wYNz73fO9517D48L/3XYjUj1FPwoWMybyGP0ITalVZcQZRlTftg9aecnonUbhH3Duy3ROMY9/9LknMwZDSqnP2pHOi1dU3TCvqFDJp1Mxb8BRoR6vNryBq+ju0tO5n5kLwLngHtNyYdhdnBMFFv0Wk5wXZxRIMQY8Sr9x4xi0q47UXTi7MzzwBGgQ+hgUC29tKZB2De826STQGhoh1ctfbnWvTQi7t05IEumgU5JTwSzpck6t3Ik9RR8SzSe2o7crDiAN3v6C2AfgJkzrlzOazGIgsV8/c69Sv+xmxVfMalOHwW+BW2Oko276vtuPTCRT8PjcXbm84ihh9djEDfEZk4eOLHqBEAOQOgz4KH19d8MbatH/xiI2wH8JW8e+KlN1TVLtMPMHgeuteF/8G5b6gQg4Y5WgwaYeK9pqybjGe9c6ROvcuZjmZ4Faqtq4F0WbvWa6hoMjAWAqCu+081cfkvikGABmBc8GVSmP6inBpXS+0JPGVwSLAgddJ3Lh6Ogdleq+ks9d2XIwNfAfSbbbuXy98CB9GuLoFo6QTrIOuLs0GMCEDMtBjKmTDyNsUcU327+ezUw4PJb9y1/dcQbnNDpcl1ni9ADiMCrll5XoZCJLy49B0LoVIuBH3ZPxv7iHPBgnD37AlXeWREHi//o+hNXne6yCxlIBGA/ei6PAMRzV/eC9QAXfOfKVMsM7PxEJHNG09WRuHfnwAoHMtlrwO/AIjBr8Kq35G6zr6Z/jbcOP4rsMKAE22/lctxQuxphdnDMsANAiGyft6XrqE1M1JrzAFQoZOK5q3tTcV/wZlCdfrkxp8VAFJ0oe/aN1ASM70DHVUs+9ZfDnwGiTPfd5mo7sj2gHkCCMb/a/0rz7NZ+cHoH82bOOGjzWjkpLiTY/o7qmVPtyBs/mbmcFyUbd5k5eaQc2KaUmb/+ZGrKd65MNd75/w9/A7acQ4Oc6FFKAAAAAElFTkSuQmCC"
+								alt=""
+							/>
+							<p>Log In</p>
+						</button>
+					</a>
+					<div class="oblique">/</div>
+					<a href="">
+						<button id="third-button">
+							<p>Sign Up</p>
+						</button>
+					</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<h3 class="order-heading">My orders</h3>
+			<div class="order-main">
+				<div class="shopping-orders flex">
+					<p class="shopping-btn">Shopping Orders</p>
+					<p class="deals-btn">Deals</p>
+				</div>
+				<div class="search-orders flex">
+					<img
+						width="30px"
+						height="30px"
+						src="https://t3.ftcdn.net/jpg/01/27/72/28/240_F_127722883_DD4Sp3V30YxvYut3sRsaJqv7TKloEuyH.jpg"
+						alt=""
+					/>
+					<input
+						autocomplete="off"
+						type="text"
+						placeholder="Enter Order ID."
+						id="order-id"
+					/>
+				</div>
+			</div>
+			<div class="append-data">
+				<div id="append-div"></div>
+			</div>
+			<div id="empty-div"></div>
+		</main>
+		<footer>
+			<div class="before-footer">
+				<div></div>
+			</div>
+
+			<div class="footer-first">
+				<h4>
+					Paytm Mall - India’s Leading Online Shopping Experience, Brought to
+					You by Paytm
+				</h4>
+				<p>
+					Online shopping with Paytm Mall is quick, convenient and trouble-free.
+					You can shop for the desired product right from the comfort of your
+					home and get them delivered straight to your doorstep.
+				</p>
+				<p>
+					Browse Paytm Mall and get access to over 65 million products ranging
+					from smartphones, tablets to laptops, sarees, kurtas & kurtis to
+					t-shirts, sneakers, sport shoes to sandals, earrings, watches to
+					fitness bands, chimneys, cookware to gas stoves, dairy products, baby
+					products to makeup kits and many more.
+				</p>
+				<h5>What are we offering on Paytmmall.com?</h5>
+				<p>
+					Paytm Mall strives hard to make your online shopping a more pleasant
+					and cost-effective experience by providing the top quality products at
+					the best price rates in India. Our collection of products consist of
+					electronic appliances, clothes, grocery, home and kitchen products,
+					backpacks, automobiles, books and stationery, to name a few.
+				</p>
+				<p>
+					The super value bazaar offers an extensive range of grocery products
+					like daily food staples, ready to cook food, high on nutrition food,
+					beauty, make-up, personal care, health, baby care products and many
+					more. Also take a look at the latest Automobile section that consists
+					of cars, bikes, scooters, sports bikes, accessories, riding gear and
+					automotive care.
+				</p>
+				<p>
+					Shop by categories, check out all the available deals, limited period
+					offers, cashback offers, seasonal sales, and there is so much more to
+					make your online shopping experience enjoyable & gratifying!
+				</p>
+				<h5>Benefits of shopping on Paytmmall.com</h5>
+				<pre><span>User-Friendly:</span> Leading online shopping experience in India which is simple and faster to load. Shop on the go and get the products delivered in just a few easy clicks.</pre>
+				<pre><span>Safe & Secure Shopping: </span>You need not worry about your account credentials or personal details.
+			● Each and every transaction at Paytm Mall is securely processed and you can be rest assured that your money is in safe hands.</pre>
+				<pre><span>Check Out Closely:</span>View products of your choice in detail with clear images and thorough descriptions before buying.</pre>
+				<pre><span>Multiple Payment Options:</span>Choose a payment option of your choice i.e. Credit/Debit Cards, Netbanking and UPI.
+			● Use Paytm Wallet for quick checkouts & hassle-free payments</pre>
+				<pre><span>Paytm Postpaid Services:</span>Now, you can buy today and pay next month with Paytm-ICICI Bank Postpaid.</pre>
+				<pre><span>Order History: </span>All your orders show up at one place, you can track them or repeat them with ease.
+			● Trouble-free returns, track request & replacement of your orders</pre>
+				<pre><span>24x7 Customer Care: </span> For all your queries and concerns regarding your shopping orders, head over to <a href="" class="span1">paytmmall.com/care</a> or call us at 01204606060 anytime</pre>
+				<p>
+					The products paired with amazing deals are a topping on the cake that
+					no one would want to miss. Paytm Mall World Store offers access to
+					imported products ranging from beauty and personal care, watches,
+					jewellery and so much more that too at exclusive price rates.
+				</p>
+				<p>
+					Paytm Mall presents benefits like faster delivery with easy returns
+					and payment options. Moreover, you can also take delight in
+					<a class="span1" href="">online shopping</a> with cash on delivery
+					(COD) option as & when needed.
+				</p>
+				<div class="footer-flex">
+					<div>
+						<img
+							src="https://cdn-icons-png.flaticon.com/512/535/535285.png"
+							alt=""
+						/>
+						<p class="p1">24x7 Help</p>
+						<p class="p2">
+							Need Help? <span>Click Here.</span> You can also talk to us on
+							0120 4606060 to resolve your query.
+						</p>
+					</div>
+					<div>
+						<img
+							src="https://cdn-icons.flaticon.com/png/512/4511/premium/4511704.png?token=exp=1642848070~hmac=b77356edbd296b5ceea65e7796130761"
+							alt=""
+						/>
+						<p class="p1">Paytm Trust</p>
+						<p class="p2">
+							Your money is yours! All refunds come with no question asked
+							guarantee.
+						</p>
+					</div>
+					<div>
+						<img
+							src="https://cdn-icons.flaticon.com/png/512/5624/premium/5624202.png?token=exp=1642847288~hmac=8887fc1d09bd4130c69ed933d6e975ec"
+							alt=""
+						/>
+						<p class="p1">100% Assurance</p>
+						<p class="p2">
+							At Paytm, we provide 100% assurance. If you have any issue, your
+							money is immediately refunded. Sit back and enjoy your shopping.
+						</p>
+					</div>
+					<div>
+						<img
+							src="https://cdn-icons.flaticon.com/png/512/2211/premium/2211057.png?token=exp=1642847126~hmac=74985d5e10127722311f08c20f8b119c"
+							alt=""
+						/>
+						<p class="p1">Paytm Mall Promise</p>
+						<p class="p2">
+							Products with this tag are quality checked, and shipped the same
+							day from certified warehouses. So you get the right product,
+							faster.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-second">
+				<h5>
+					Buy Electronics, Fashion, Cars & Bikes, Stationery, Daily Needs & More
+					At Paytmmall.com: India's Premier Online Shopping Website
+				</h5>
+				<p>
+					Say goodbye to spending hours for finding the perfect item of your
+					choice. Just log on to Paytm Mall to discover the world of hassle-free
+					shopping where you can shop from the comfort of your home & get your
+					purchase delivered right at your doorstep at lightning fast speed.
+					Whether you are looking for clothing, footwear, book, accessories,
+					mobiles, laptops or computers, rest assured you will find it at Paytm
+					Mall at the best price in India.
+				</p>
+				<p>
+					Browse through our huge collection and pick the product of your choice
+					at the most affordable price. From high-end products, top brands to
+					affordable options, our varied collection makes sure that there is
+					something for everyone and every budget type. Paytm Mall actually
+					offers a unique combination of the mall and bazaar concept under one
+					roof to help Indian consumers find exactly what they are looking for
+					at the most reasonable price.
+				</p>
+				<p>
+					Now, you don’t need to be living in metros to purchase the latest
+					clothing, footwear, accessories or furniture. You can access the
+					largest assortment of domestic and international products and get it
+					delivered in just a few days, anywhere in India.
+				</p>
+				<p>
+					Whether you are looking for
+					<span>Men’s Fashion, Women’s Fashion</span> or Kid’s fashion, Paytm
+					Mall is your ultimate shopping destination. Browse through our wide
+					selection of apparel, footwear and accessories and stay stylish and
+					fashionable. From corporate attire, evening and party wear to casual
+					wear, we have everything in different sizes, colors, materials & price
+					to meet your style & requirements. Some of the key product categories
+					at Paytm Mall include:
+				</p>
+				<p>
+					<span id="sp">Beauty & Personal Care:</span> Do you find it difficult
+					to select the perfect shampoo,
+					<span>Perfumes & Fragrance, Body Lotion</span> or
+					<span>Makeup Essentials</span> with myriad of options available? Paytm
+					Mall is your perfect companion when it comes to finding beauty and
+					personal care products matching your particular skin type or style.
+					Choose from our exhaustive collection, where each product includes
+					information regarding skin type it’s suitable for, ingredients and
+					usage instruction for best effect.
+				</p>
+				<p>
+					<span id="sp">Home & Kitchen:</span>Your home & kitchen is an
+					extension of your personality, where everything reflects your style.
+					Choose from our wide array of products to create your dream home &
+					kitchen, which reflects your unique taste. Avail the best deals on
+					<span>Home Decor</span> & <span>Furnishings, Cookware</span>, Home
+					Essentials, <span>Wall Arts, Lamps, Clocks</span>, to name a few.
+				</p>
+				<p>
+					<span id="sp">Sports & Health:</span> Are you a health & sport freak,
+					then your search for gears and equipment end at Paytm Mall. From
+					<span>Outdoor Adventure Equipments, Swimming Gear,</span>, gym
+					essentials to <span>Cricket Kit, Badminton Essentials </span> &
+					<span>Table Tennis Equipments</span>, you get everything at reasonable
+					prices under one roof.
+				</p>
+				<p>
+					<span id="sp">Appliances:</span> Get the best deals & discounts on
+					<span> TVs, ACs, Refrigerators, Geysers, Washing Machines </span> and
+					more at the Paytm Mall. We stock an assortment of electronics from
+					various brands available at different price points. Choose electronics
+					from brands such as Blue Star, Daikin, Haier, Hitachi, Samsung, Sony
+					and more & get amazing cashback offers.
+				</p>
+				<p>
+					<span id="sp">Mobile Phones:</span> Now, you can flaunt the latest
+					<span>Smartphones</span> & <span>Keypad Mobiles </span> without
+					burning a hole in your pocket.Choose from our wide-ranging selection
+					of smartphones and get the mobile phone of your choice at the best
+					price in India. So, stay connected with family & friends with mobile
+					phones from top brands, including
+					<span>
+						Apple iPhone, Samsung Mobile, Oppo Mobile, Vivo Mobile, Motorola
+						Mobile, Gionee Mobile, HTC Mobile, Micromax Mobile</span
+					>, Kindle and more.
+				</p>
+				<p>
+					<span id="sp">Laptops and Electronics: </span>Check out the amazing
+					collection of <span>Laptops, Desktops</span> and
+					<span>Computer Accessories</span> on Paytm Mall. You can also choose
+					from the vast assortment of <span>Cameras, Speakers</span>,
+					earphones,<span> Storage devices</span> and avail exclusive offers.
+					From sleek, travel-friendly laptops to sturdy business laptops with
+					superior performance, Paytm Mall is the one-stop destination for all
+					your needs. Also, you can choose electronics items from the most
+					trusted brands, including Lenovo, HP, Apple, MSI, Canon, Nikon, JBL,
+					Beats and many more.
+				</p>
+				<p>
+					<span id="sp">Cars & Bikes:</span> Enjoy the ultimate riding
+					experience by selecting the car or bike of your dreams from the
+					comfort of your home. Check out the exclusive range at Paytm Mall and
+					<span>buy car</span> or bike loaded with features that you are looking
+					for at the best possible price. <span>Buy a bike</span> or car of your
+					choice from our portal and enjoy various Cashback offers & deals.
+					What’s more, to make sure that our customers enjoy a seamless shopping
+					experience, Paytm Mall allows them to book their test ride.
+				</p>
+				<p>
+					<span id="sp">FASTag:</span> FASTag is a resuable RFID Tag that all
+					kinds of vehicle owners need to affix on the front windscreen of their
+					vehicle, as it will make your highway experience smoother. Now, you
+					don’t have to carry cash to pay toll charges, as toll amount is
+					deducted automatically from the linked FASTag wallet.
+				</p>
+				<p>
+					Gone are the days, when we had to go to different shops or even
+					different markets for purchasing our favourite products at reasonable
+					prices. All this has changed, as just about anything can be bought
+					online that too at amazingly discounted prices. And to make the deals
+					even more lucrative for you Paytm Mall has come up with its
+					<span> Happy New Year Sale</span> . This sale consists of The Gift
+					Gallery, <span>2019 Trendy Must Haves</span>, and Deals Starting at
+					?1, <span>Clearance Deals</span> 2018 and
+					<span>Cracking Combos</span> accompanied by a variety of other
+					products that we need on a regular basis.
+				</p>
+				<h5>
+					Shop for the Newly Launched Mobiles At Exclusive Prices Online at
+					Paytm Mall
+				</h5>
+				<p>
+					Mobile phones have become an integral part of our lives. It becomes
+					essential to have the latest smartphone to keep up with the
+					ever-evolving world of technology. Paytm Mall brings to you the latest
+					assortment of best smartphones in India from the leading mobile makers
+					such as Apple, Samsung, Vivo, Oppo and many more! Buy latest
+					smartphones from Paytm Mall and avail heavy Cashback offers available
+					exclusively with us.
+				</p>
+				<h5>Paytm Mall: Re-defining Your Shopping Experience</h5>
+				<p>
+					No matter what product you are looking for, get ready to be spoilt for
+					choices at Paytm Mall. Apart from our massive selection, there are
+					numerous other perks of buying from Paytm Mall. Being your trusted
+					online shopping partner, we offer services like doorstep delivery,
+					quick refunds, cash on delivery, and easy & secured payment options.
+				</p>
+				<p>
+					When you shop from Paytm Mall, you are assured the get the product of
+					top quality as we conduct stringent quality checks right from storage
+					to delivery. Also, we list structured categories and only authorized
+					brands. While we make sure that your purchase reaches you at the
+					earliest, we also make sure that it reaches you in the best condition
+					as it goes through our certified warehouse and shopping channel.
+				</p>
+				<p>
+					Customer satisfaction is key to us. So, if the delivered product is
+					not how you expected or doesn’t fit you properly, don’t worry. Thanks
+					to our easy return policy, you can send the piece back.
+				</p>
+				<p>
+					So, what are you waiting for, download Paytm Mall App from App Store
+					available for <span>iOS, Android</span> & <span>Windows</span> to
+					avail the best discounts & deals!
+				</p>
+			</div>
+
+			<div class="one-line">
+				<p>
+					Cashback would be added as Paytm Cash, which is One97 Communications
+					Ltd loyalty program. It can be used to pay for goods & services sold
+					by merchants that accept ‘Pay with Paytm’
+				</p>
+			</div>
+
+			<div class="footer-inner">
+				<div class="footer-inner-div">
+					<p>About Us</p>
+					<p>Partner with us</p>
+					<p>Terms & conditions</p>
+					<p>Blog</p>
+					<p>Media</p>
+					<p>24x7 Help</p>
+					<p>Grievance policy</p>
+					<p>Bug bounty</p>
+					<p>Return/Cancellation policy</p>
+				</div>
+				<div class="footer-inner-div2">
+					<img
+						src="https://cdn-icons-png.flaticon.com/512/1532/1532495.png"
+						alt=""
+					/>
+					<img
+						src="https://cdn-icons-png.flaticon.com/512/732/732076.png"
+						alt=""
+					/>
+					<img
+						src="https://cdn-icons-png.flaticon.com/128/38/38002.png"
+						alt=""
+					/>
+					<div id="line"></div>
+					<img
+						src="https://cdn-icons-png.flaticon.com/512/733/733635.png"
+						alt=""
+					/>
+					<img
+						src="https://cdn-icons-png.flaticon.com/128/1384/1384005.png"
+						alt=""
+					/>
+					<img
+						src="https://cdn-icons-png.flaticon.com/512/1400/1400829.png"
+						alt=""
+					/>
+					<img
+						src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png"
+						alt=""
+					/>
+				</div>
+			</div>
+
+			<div class="footer-almost-end">
+				<img
+					src="data:image/png;base64,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"
+					alt=""
+				/>
+
+				<div>
+					<button>
+						<div>
+							<img
+								src="data:image/png;base64,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"
+								alt=""
+							/>
+							<p>Seller</p>
+						</div>
+						<p>Become a Seller</p>
+					</button>
+					<button>
+						<div>
+							<img
+								src="https://labourlawadvisor.in/blog/wp-content/uploads/2019/07/Horizontal-Thumbnail-7.jpg"
+								alt=""
+							/>
+							<p>Wallet</p>
+						</div>
+						<p>Payment Services</p>
+					</button>
+				</div>
+			</div>
+
+			<div id="footer-end">
+				<p>
+					From Electronics, Fashion to Cars: Buy Everything Online from the
+					Convenience of Your Home from Paytm Mall
+				</p>
+
+				<div>
+					<select name="" id="">
+						<option value=""><p>Electronics</p></option>
+					</select>
+					<select name="" id="">
+						<option value=""><p>Mobiles</p></option>
+					</select>
+					<select name="" id="">
+						<option value=""><p>Car & bike</p></option>
+					</select>
+					<select name="" id="">
+						<option value=""><p>Super Market</p></option>
+					</select>
+					<select name="" id="">
+						<option value=""><p>Women's Fashion</p></option>
+					</select>
+					<select name="" id="">
+						<option value=""><p>Men's Fashion</p></option>
+					</select>
+					<select name="" id="">
+						<option value=""><p>Home & Kitchen</p></option>
+					</select>
+					<select name="" id="">
+						<option value=""><p>Baby, Kids & Toys</p></option>
+					</select>
+					<select name="" id="">
+						<option value=""><p>Car & Bike Accessories</p></option>
+					</select>
+					<select name="" id="">
+						<option value=""><p>Sports & Fitness</p></option>
+					</select>
+					<select name="" id="">
+						<option value=""><p>Stationery</p></option>
+					</select>
+					<select name="" id="">
+						<option value=""><p>Travel Cards</p></option>
+					</select>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+<script src="./scripts/order.js"></script>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="icon" href="https://www.seekpng.com/png/full/769-7692988_paytm-mall-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Venkatesh/styles/reset.css">
+    <link rel="stylesheet" href="./Venkatesh/styles/cart.css">
+    <link rel="stylesheet" href="./Venkatesh/styles/cartPayment.css">
+    <link rel="stylesheet" href="./Venkatesh/styles/cartItems.css">
+    <link rel="stylesheet" href="./Venkatesh/styles/header.css">
+    <link rel="stylesheet" href="./Venkatesh/styles/footer.css">
+</head>
+<body>
+    <div id="HeaderCartPage"></div>
+    <div id="content">
+        <div id="cartItems">
+            <div id="header">
+               <div>
+                    <img class="border-radius" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1rBgZWpUQU3xbk-s7_8OVWS1DleRzCMWx2Ev3QAkX3Y3-Uk7k" alt="">
+                   <p><span id="total"></span>in your bag</p>
+               </div>
+               <div id="logIn1" class="logInToProceed pointer" class="font-color pointer" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Login To Proceed</div>
+            </div>
+            <hr>
+            <div id="cartContent"></div>
+        </div>
+        <div id="payment">
+            <div id="payAddress">
+                <div id="addHead" class="Head">
+                    <div>
+                        <img class="border-radius" src="https://media.istockphoto.com/vectors/delivery-truck-icon-vector-id636525322" alt="">
+                        <p>Delivery Address</p>
+                    </div>
+                    <p id="addAddress" class="font-color pointer" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></p>
+                </div>
+                <hr>
+                <div id="dDetails">
+                    <p>Deliver to <span>431703</span></p>
+                    <div id="changedDetails" class="font-color pointer">Change</div>
+                </div>
+            </div>
+            <div id="paySummary">
+                <div class="Head">
+                    <img class="border-radius" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS5n4UJPaho3iYi6sKCiPPMo4b7w6ZKPmiGg&usqp=CAU" alt="">
+                    <p>Payment Summary</p>
+                </div>
+                <hr>
+                <div id="payDetails">
+                    <div>
+                        <p>Bag Total</p>
+                        <span id="totalPrice"></span>
+                    </div>
+                    <div>
+                        <p>Shipping Charges</p>
+                        <span id="sCharge">Free</span>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>Amount Payble</p>
+                        <span></span>
+                    </div>
+                    <hr>
+                    <p id="logIn2" class="pointer log logInToProceed" class="font-color pointer" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Login To Proceed</p>
+                    <p id="continue" class="font-color pointer">Continue Shopping ></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <div id="abb">
+               
+            </div>
+        </div>
+    </div>
+    <div id="FooterCartPage"></div>
+</body>
+</html>
+<script type="module">
+import { header, footer } from "./Venkatesh/components/footer.js";
+
+document.querySelector("#HeaderCartPage").innerHTML = header();
+document.querySelector("#FooterCartPage").innerHTML = footer();
+let myOrder = JSON.parse(localStorage.getItem("allOrders")) || [];
+
+import { pay, cardPayment, otp } from "./Venkatesh/components/payments.js";
+import { addAddress, selectAddress } from "./Venkatesh/components/addressComponents.js";
+let allAddresses = JSON.parse(localStorage.getItem("userAddresses")) || [];
+let allCartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+
+document.querySelector("#total").innerText = allCartItems.length + " Items "
+document.querySelector(".el").addEventListener("click", LogInOut);
+
+let tPrice = document.querySelector("#totalPrice");
+tPrice.innerText = "₹" + allCartItems[0].price
+let paymentDiv = document.querySelector("#payment");
+let flag = 0;
+let addressShowAddDiv = document.querySelector("#abb");
+let log1 = document.querySelector("#logIn1");
+let log2 = document.querySelector("#logIn2");
+document.querySelector("#addAddress").addEventListener("click", function(){
+    addressShowAddDiv.innerHTML = addAddress();
+    document.querySelector("#Done").addEventListener("click", saveAddress);
+})
+let cartItemsDiv = document.querySelector("#cartContent");
+let a = allCartItems[0];
+
+
+function showCart(){
+    cartItemsDiv.innerHTML = null;
+    allCartItems.forEach(function(ele){
+        let div = document.createElement('div');
+        let image = document.createElement('img');
+        let div1 = document.createElement('div');
+        let h2 = document.createElement('h2');
+        let ram = document.createElement('p');
+        let price = document.createElement('p');
+        let hr = document.createElement('hr');
+        
+        div.addEventListener("click", function(){
+            tPrice.innerText = "₹" + ele.price;
+            a = ele;
+        });
+        image.src = ele.image_fr;
+        h2.innerText = ele.name;
+        ram.innerText = ele.ram;
+        price.innerText ="₹" + ele.price;
+        div1.append(h2, ram);
+        div.append(image, div1, price);
+        div.setAttribute("class", "pointer");
+        cartItemsDiv.append(div, hr);
+    });
+}
+showCart();
+
+function LogInOut(event){
+    event.preventDefault();
+    let address = document.querySelector("#addAddress");
+    let head = document.querySelector("#addHead");
+    if (flag === 0){
+        flag = 1;
+        address.textContent = "Add new address";
+        head.style.justifyContent = "space-around";
+        head.style.paddingLeft = "0px";
+        log1.innerText = "Select Address";
+        log2.innerText = "Select Address";
+    }
+    else{
+        flag = 0;
+        address.innerHTML = null;
+        head.style.justifyContent = null;
+        head.style.paddingLeft = "21px";
+        log1.innerText = "Login To Proceed";
+        log2.innerText = "Login To Proceed";
+    }
+}
+
+function saveAddress(){
+    console.log("Yes");
+    let Address = {
+        name : myForm.fName.value,
+        firstAdd : myForm.add1.value,
+        secondAdd : myForm.add2.value,
+        mobile : myForm.mNumber.value,
+        pincode : myForm.pin.value,
+        city : myForm.city.value,
+        state : myForm.state.value,
+        def : myForm.checkbox.value
+    }
+    let flag1 = 1;
+    for (let key in Address){
+        if (Address[key] === ""){
+            flag1 = 0;
+            alert("'All the fields are compulsory'");
+            break;
+        }
+    }
+    if (flag1 === 1){
+        console.log(allAddresses, Address);
+        allAddresses.push(Address);
+        localStorage.setItem("userAddresses", JSON.stringify(allAddresses));
+        let arr = document.querySelectorAll(".pincode");
+        for (let i = 0; i < arr.length; i++){
+            arr[i].value = "";
+        }
+        document.querySelector("#checkbox").checked = "";
+        alert("'Address added successsfully'");
+    }
+}
+
+log1.addEventListener("click", SelectAddressLogIn);
+log2.addEventListener("click", SelectAddressLogIn);
+function SelectAddressLogIn(){
+    if (flag === 0){
+        addressShowAddDiv.innerHTML = null;
+        window.location.href="./login.html"
+    }
+    else{
+        addressShowAddDiv.innerHTML = selectAddress();
+        let showAllAddressesDiv = document.querySelector("#showAllAddress");
+        showAllAddresses(allAddresses, showAllAddressesDiv);
+    }
+}
+
+function showAllAddresses(data, location){
+    data.forEach(function(ele){
+        let div = document.createElement('div');
+        let userName = document.createElement('h2');
+        let p1 = document.createElement('p');
+        let p2 = document.createElement('p');
+        let p3 = document.createElement('p');
+        let p4 = document.createElement('p');
+        let div2 = document.createElement('div');
+        let h5 = document.createElement('h3');
+        let p5 = document.createElement('p');
+        let hr = document.createElement('hr');
+
+        div.setAttribute("class", "pointer");
+        userName.innerText = ele.name;
+        p1.innerText = ele.firstAdd;
+        p2.innerText = ele.secondAdd;
+        p3.innerText = ele.city + "-" + ele.pincode;
+        p4.innerText = ele.state;
+        h5.innerText = "Mobile:";
+        p5.innerText = ele.mobile;
+
+        div.addEventListener("click", function(){
+           selectedAddress(ele);
+        })
+
+        div2.append(h5, p5)
+        div.append(userName, p1, p2, p3, p4, div2, hr);
+
+        location.append(div);
+
+    })
+}
+
+function selectedAddress(ele){
+    let arr = [];
+    arr.push(ele)
+    let details = document.querySelector("#dDetails");
+    details.remove();
+    let div = document.createElement('div');
+    div.setAttribute("id", "dDetails");
+    console.log(ele);
+    let payAddressDiv = document.querySelector("#payAddress");
+    payAddressDiv.append(div);
+    payAddressDiv.style.height = "350px";
+    log1.innerText = "Pay To Proceed";
+    log2.innerText = "Pay To Proceed";
+    showAllAddresses(arr, div);
+    log1.addEventListener("click", function(){
+        payment();
+    });
+    log2.addEventListener("click", function(){
+        payment();
+    });
+}
+function payment(){
+    addressShowAddDiv.innerHTML = null;
+    addressShowAddDiv.innerHTML = pay();
+    document.querySelector("#card").addEventListener("click", function(){
+        completePay();
+    });
+}
+
+function completePay(){
+    console.log("I am in")
+    addressShowAddDiv.innerHTML = null;
+    addressShowAddDiv.innerHTML = cardPayment();
+    document.querySelector("#submit").addEventListener("click", function(){
+        cardPay();
+    });
+}
+
+function cardPay(){
+    console.log("hii");
+    let cardDetails = {
+        cardNumber : document.querySelector("#cNumber").value,
+        cName : document.querySelector("#cName").value,
+        cCvv : document.querySelector("#cvv").value
+    }
+    if (cardDetails.cardNumber.length !== 16 || cardDetails.cName.length === 0 || cardDetails.cCvv.length !== 3){
+        alert("Invalid Inputs");
+    }
+    else{
+        let otp1 = Math.floor((Math.random()+1)*100000);
+        setTimeout(function(){
+            confirm("Your OTP is : " + otp1);
+            let div = document.querySelector("#otpGenerator");
+            div.innerHTML = null;
+            div.innerHTML = otp();
+            document.querySelector("#abb").append(div);
+            document.querySelector("#otpSubmit").addEventListener("click", function(){
+                otpAccept(otp1);
+            });
+        }, 2000)
+    }
+}
+function otpAccept(otp){
+    let submitOtp = document.querySelector("#OTP").value;
+    console.log(otp, submitOtp);
+    let tok = Math.floor(Math.random()*17123456783);
+    a.token = tok;
+    if (submitOtp == otp){
+        a.status = "Order Complete"
+        setTimeout(function(){
+            alert("Order Successful");
+        }, 2000)
+    }
+    else{
+        ele.status = "Order Failed";
+        alert("Order Failed");
+    }
+    myOrder.push(a);
+    localStorage.setItem("allOrder", JSON.stringify(myOrder));
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

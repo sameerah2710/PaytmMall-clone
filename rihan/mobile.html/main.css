@@ -1,0 +1,243 @@
+/* ------------------------------------------HEADER CSS----------------------------------------------------------------------------------------- */
+@import "./header.css";
+
+
+
+/* ---------------------------------------------------------PHONE.HTML CSS--------------------------------------------------------------------- */
+#le{
+/* justify-content: center; */
+margin-left: 47%;
+}
+.By{
+margin-left: 43%;
+}
+
+#keypad {
+/* border: 2px solid red; */
+height: 660px;
+width: 99.9%;
+
+
+}
+.ig img:hover{
+    transition: 50ms;
+    transform: scale(1);
+height: 450px;
+width: 400px;
+
+}
+h1{
+margin-left: 25%;
+}
+
+#work{
+/* border: 2px solid red; */
+display: flex;
+height: 600px;
+width: 99.9%;
+margin-top: 3%;
+
+
+}
+
+#tablets{
+/* border:2px solid blue ; */
+height: 570px;
+width: 1000px;
+margin-left: 15px;
+}
+
+#tablets-2{
+/* border:2px solid blue ; */
+height: 580px;
+width: 550px;
+}
+
+#charge{
+
+/* border: 2px solid blue; */
+height: 280px;
+width: 499px;
+margin-left: 15px;
+
+}
+
+
+#internal{
+
+/* border: 2px solid blue; */
+height: 280px;
+width: 499px;
+margin-left: 15px;
+
+}
+#all{
+border: 2px solid red;
+height: 35px;
+width: 120px;
+background-color: red;
+color: white;
+border-radius: 20px;
+margin-left: 45%;
+}
+.vivo {
+/* border: 2px solid red; */
+height: 450px;
+width: 99.9%;
+
+
+}
+.galaxy{
+height: 250px;
+widows: 350px;
+margin-left: 10px;
+margin-top: 20px;
+}
+.chotu{
+/* border: 2px solid red; */
+height: 550px;
+width: 300px;
+}
+
+h4{
+margin-left: 20px;
+}
+p{
+margin-left: 20px;
+}
+#starting{
+
+/* border: 2px solid red; */
+display: flex;
+height: 540px;
+width:100%;
+
+
+}
+.upto{
+/* border: 2px solid red; */
+height: 530px;
+width: 360px;
+margin-left: 15px;
+}
+
+.off{
+margin-left: 70px;
+
+}
+
+#nokia{
+/* border: 2px solid red; */
+height: 170px;
+width: 99.9%;
+
+}
+.boat {
+/* border: 2px solid red; */
+height: 450px;
+width: 99.9%;
+
+}
+
+#slack{
+
+/* border: 0.5px solid red; */
+height: 200px;
+display: flex;
+width:100% ;
+}
+.zoho{
+/* border: 0.5px solid blue; */
+height: 200px;
+width:25% ;
+}
+.help{
+margin-left: 36%;
+}
+
+#emmet{
+
+/* border: 1px solid red; */
+box-shadow: 12px 12px 2px 1px rgba(0, 0, 455, .2);
+box-shadow: inset;
+height: 1450px;
+width: 100%;
+margin-top: 10px;
+}
+
+.virat{
+color: red;
+}
+
+/* -------------------------------------------------------LOGIN.HTML CSS-------------------------------------------------------------------- */
+
+.container{
+    /* background: rgb(208,133,240); */
+    /* background: radial-gradient(circle, rgba(208,133,240,0.5)  ,rgba(169,113,193,1) ); */
+    /* border: 2px solid red; */
+    width:900px;
+    height: 600px;
+    display: flex;
+    margin-left: 190px;
+    justify-content: right;
+    box-shadow: rgba(99, 99, 99, 0.9) 0px 3px 8px 0px;
+    /* align-items: center; */
+}
+#himanshu{
+    /* border: 2px solid red; */
+    height: 590px;
+    width: 500px;
+}
+li{
+    font-size: larger;
+}
+
+button{
+    border: 2px solid black;
+    color: white;
+    height: 45px;
+    width: 170px;
+}
+#btn{
+    border: 2px solid white;
+    height: 30px;
+    width: 150px;
+    color: red;
+}
+.box{
+    /* background-color: white; */
+    /* border:0.5px solid rgb(189, 187, 187); */
+    border-radius:5px;
+    padding:20px;
+    box-shadow: 0px 0px 10px 0px grey;
+    display:flex;
+    flex-direction: column;
+}
+
+#input{
+    border:0.5px solid rgb(189, 187, 187);
+    border-radius:15px;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgba(189, 187, 187,0.3);
+    padding:5px 10px;
+}
+#generate_qr{
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+    border:none;
+    border-radius:15px;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgba(236, 34, 34, 0.774);
+    padding:5px 10px;
+    color:white;
+}
+
+#qrcode{
+    width: 250px;
+    margin:20px;
+}
+
+
